@@ -51,7 +51,7 @@ export default function Footer() {
               <Link href="/" aria-label="Shift Agency — Accueil">
                 <Image
                   alt="Shift Agency"
-                  src="/arthurdev.svg"
+                  src="/shiftagency.svg"
                   width={160}
                   height={50}
                   className="h-10 w-auto object-contain md:h-12"

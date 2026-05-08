@@ -67,8 +67,8 @@ export default function AboutLayout({
     mainEntity: {
       "@type": "Organization",
       name: "Shift Agency",
-      url: "https://Shift Agency",
-      logo: "https://Shift Agency/logo.svg",
+      url: "https://arthur.dev",
+      logo: "https://arthur.dev/shift_logo.svg",
       foundingDate: "2024",
       address: {
         "@type": "PostalAddress",

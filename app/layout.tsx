@@ -58,9 +58,9 @@ export const metadata: Metadata = {
   publisher: "Shift Agency",
 
   icons: {
-    icon: "/logo.svg",
-    shortcut: "/logo.svg",
-    apple: "/logo.svg",
+    icon: "/shift_logo.svg",
+    shortcut: "/shift_logo.svg",
+    apple: "/shift_logo.svg",
   },
 
   robots: {

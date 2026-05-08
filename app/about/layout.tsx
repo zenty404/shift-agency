@@ -6,14 +6,14 @@ import type { Metadata } from "next";
    ═══════════════════════════════════════════════════════════ */
 
 export const metadata: Metadata = {
-  title: "À propos | Agence Web Paris — arthur.dev",
+  title: "À propos | Agence Web Paris — Shift Agency",
   description:
     "Agence de développement web basée à Paris depuis 2024. Sites livrés en 7 jours sans abonnement. +100 projets réalisés. Expertise React, Next.js, SEO, applications mobiles et IA.",
 
   keywords: [
     "agence web Paris",
     "développeur web Paris",
-    "à propos arthur.dev",
+    "à propos Shift Agency",
     "agence développement Paris",
     "sites web 7 jours",
     "sans abonnement",
@@ -24,32 +24,32 @@ export const metadata: Metadata = {
   ],
 
   openGraph: {
-    title: "À propos — arthur.dev, agence web à Paris",
+    title: "À propos — Shift Agency, agence web à Paris",
     description:
       "Sites livrés en 7 jours, sans abonnement. +100 projets depuis 2024. Expertise développement web, mobile, SEO et IA.",
-    url: "https://arthur.dev/about",
+    url: "https://Shift Agency/about",
     type: "website",
     locale: "fr_FR",
-    siteName: "arthur.dev",
+    siteName: "Shift Agency",
     images: [
       {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "arthur.dev — À propos",
+        alt: "Shift Agency — À propos",
       },
     ],
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "À propos — arthur.dev",
+    title: "À propos — Shift Agency",
     description: "Agence web Paris. Sites en 7j, sans abonnement. +100 projets depuis 2024.",
     images: ["/og-image.jpg"],
   },
 
   alternates: {
-    canonical: "https://arthur.dev/about",
+    canonical: "https://Shift Agency/about",
   },
 };
 
@@ -61,14 +61,14 @@ export default function AboutLayout({
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "AboutPage",
-    name: "À propos de arthur.dev",
+    name: "À propos de Shift Agency",
     description: "Agence de développement web basée à Paris",
-    url: "https://arthur.dev/about",
+    url: "https://Shift Agency/about",
     mainEntity: {
       "@type": "Organization",
-      name: "arthur.dev",
-      url: "https://arthur.dev",
-      logo: "https://arthur.dev/logo.svg",
+      name: "Shift Agency",
+      url: "https://Shift Agency",
+      logo: "https://Shift Agency/logo.svg",
       foundingDate: "2024",
       address: {
         "@type": "PostalAddress",

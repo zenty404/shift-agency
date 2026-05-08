@@ -142,7 +142,7 @@ export default function About() {
       {/* ── Hero ── */}
       <section
         className="relative flex flex-col items-center justify-start overflow-hidden px-3 sm:px-6 pt-24 pb-20 sm:pb-24 md:pb-28"
-        aria-label="À propos d'arthur.dev"
+        aria-label="À propos d'Shift Agency"
       >
         {/* ── Corporate gradient background ── */}
         <div className="pointer-events-none absolute inset-0 z-0" aria-hidden="true">
@@ -227,7 +227,7 @@ export default function About() {
           <h1 className="font-display leading-[1.08] tracking-[-0.02em]">
             <RevealLine delay={150} loaded={loaded}>
               <span className="text-[clamp(2.2rem,8vw,7rem)] font-bold text-[#0F172A]">
-                À propos d&apos;arthur.dev
+                À propos d&apos;Shift Agency
               </span>
             </RevealLine>
           </h1>
@@ -241,7 +241,7 @@ export default function About() {
               transition: "all 800ms cubic-bezier(0.22, 1, 0.36, 1) 600ms",
             }}
           >
-            arthur.dev est une agence de développement web basée à Paris.
+            Shift Agency est une agence de développement web basée à Paris.
             Nous créons des sites performants pour artisans, coachs et entrepreneurs.
             Sites livrés en 7 jours, sans abonnement mensuel.
           </p>
@@ -308,7 +308,7 @@ export default function About() {
           </div>
           <div className="space-y-4 text-base text-gray-text leading-relaxed">
             <p>
-              arthur.dev est né d&apos;une conviction simple : les artisans et entrepreneurs
+              Shift Agency est né d&apos;une conviction simple : les artisans et entrepreneurs
               méritent des sites web professionnels, rapides à obtenir et sans se ruiner
               en abonnements mensuels.
             </p>
@@ -330,7 +330,7 @@ export default function About() {
         <div className="mx-auto max-w-[1100px] grid gap-12 lg:grid-cols-2 lg:items-center">
           <div className="order-2 lg:order-1 space-y-4 text-base text-gray-text leading-relaxed">
             <p>
-              arthur.dev repose sur un modèle simple : développement rapide,
+              Shift Agency repose sur un modèle simple : développement rapide,
               prix fixe, livraison en 7 à 10 jours. Pas de surprises, pas d&apos;abonnement,
               vous êtes propriétaire de tout.
             </p>

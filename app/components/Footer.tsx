@@ -48,9 +48,9 @@ export default function Footer() {
           <div className="mb-12 flex flex-col items-start justify-between gap-16 md:mb-24 md:flex-row md:gap-8">
             {/* ─── Left: Logo + Info ─── */}
             <div className="flex max-w-sm flex-col gap-6 md:gap-8">
-              <Link href="/" aria-label="arthur.dev — Accueil">
+              <Link href="/" aria-label="Shift Agency — Accueil">
                 <Image
-                  alt="arthur.dev"
+                  alt="Shift Agency"
                   src="/arthurdev.svg"
                   width={160}
                   height={50}
@@ -77,7 +77,7 @@ export default function Footer() {
               </div>
 
               <div className="mt-2 text-[10px] font-medium uppercase tracking-widest text-gray-text/60">
-                <p>© 2026 arthur.dev™</p>
+                <p>© 2026 Shift Agency™</p>
               </div>
             </div>
 
@@ -128,7 +128,7 @@ export default function Footer() {
         {/* ─── Grand logo "ARTHUR.DEV" coupé en bas ─── */}
         <div className="pointer-events-none flex w-full select-none items-end justify-center overflow-hidden pb-0 leading-none">
           <h2 className="relative translate-y-[35%] whitespace-nowrap font-display text-[13vw] font-black tracking-tighter text-foreground md:text-[14vw]">
-            ARTHUR.DEV
+            SHIFT AGENCY
           </h2>
         </div>
       </footer>

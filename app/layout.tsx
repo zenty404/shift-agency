@@ -34,7 +34,7 @@ const jetbrainsMono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://arthur.dev"),
-  title: "arthur.dev | Développement Web & Mobile Premium — Paris",
+  title: "Shift Agency | Développement Web & Mobile Premium — Paris",
   description:
     "Création de sites corporate, landing pages, SaaS et applications mobiles. React, Next.js, stack moderne. Conception, développement, déploiement. Basé à Paris.",
 
@@ -53,9 +53,9 @@ export const metadata: Metadata = {
     "développeur full-stack",
   ],
 
-  authors: [{ name: "arthur.dev", url: "https://arthur.dev" }],
-  creator: "arthur.dev",
-  publisher: "arthur.dev",
+  authors: [{ name: "Shift Agency", url: "https://arthur.dev" }],
+  creator: "Shift Agency",
+  publisher: "Shift Agency",
 
   icons: {
     icon: "/logo.svg",
@@ -79,8 +79,8 @@ export const metadata: Metadata = {
     type: "website",
     locale: "fr_FR",
     url: "https://arthur.dev",
-    siteName: "arthur.dev",
-    title: "arthur.dev — Agence de développement web & mobile",
+    siteName: "Shift Agency",
+    title: "Shift Agency — Agence de développement web & mobile",
     description:
       "Sites corporate, SaaS, applications mobiles. Technologies modernes, livraison agile.",
     images: [
@@ -88,14 +88,14 @@ export const metadata: Metadata = {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "arthur.dev — Développement web & mobile",
+        alt: "Shift Agency — Développement web & mobile",
       },
     ],
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "arthur.dev — Développement web & mobile",
+    title: "Shift Agency — Développement web & mobile",
     description: "Sites corporate, SaaS, applications mobiles. Stack moderne.",
     images: ["/og-image.jpg"],
   },
@@ -113,7 +113,7 @@ export default function RootLayout({
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
-    name: "arthur.dev",
+    name: "Shift Agency",
     description: "Agence de développement web et mobile basée à Paris",
     url: "https://arthur.dev",
     areaServed: {

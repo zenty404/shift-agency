@@ -6,7 +6,7 @@ import type { Metadata } from "next";
    ═══════════════════════════════════════════════════════════ */
 
 export const metadata: Metadata = {
-  title: "Portfolio & Réalisations | Sites, SaaS, Apps — arthur.dev",
+  title: "Portfolio & Réalisations | Sites, SaaS, Apps — Shift Agency",
   description:
     "Découvrez nos projets web et mobile : +50 sites vitrines, +20 applications SaaS et mobiles en production. Landing pages performantes, e-commerce, dashboards. 5/5 sur Google.",
 
@@ -24,19 +24,19 @@ export const metadata: Metadata = {
   ],
 
   openGraph: {
-    title: "Portfolio — Projets Web & Mobile | arthur.dev",
+    title: "Portfolio — Projets Web & Mobile | Shift Agency",
     description:
       "+50 sites vitrines, +20 applications en production. Sites corporate, SaaS, apps mobiles. 5/5 sur Google.",
-    url: "https://arthur.dev/our-projects",
+    url: "https://Shift Agency/our-projects",
     type: "website",
     locale: "fr_FR",
-    siteName: "arthur.dev",
+    siteName: "Shift Agency",
     images: [
       {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "arthur.dev — Portfolio & Réalisations",
+        alt: "Shift Agency — Portfolio & Réalisations",
       },
     ],
   },
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
   },
 
   alternates: {
-    canonical: "https://arthur.dev/our-projects",
+    canonical: "https://Shift Agency/our-projects",
   },
 };
 
@@ -61,13 +61,13 @@ export default function OurProjectsLayout({
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
-    name: "Portfolio arthur.dev",
-    description: "Portfolio de projets web et mobile réalisés par arthur.dev",
-    url: "https://arthur.dev/our-projects",
+    name: "Portfolio Shift Agency",
+    description: "Portfolio de projets web et mobile réalisés par Shift Agency",
+    url: "https://Shift Agency/our-projects",
     isPartOf: {
       "@type": "WebSite",
-      name: "arthur.dev",
-      url: "https://arthur.dev",
+      name: "Shift Agency",
+      url: "https://Shift Agency",
     },
     mainEntity: {
       "@type": "ItemList",
@@ -78,19 +78,19 @@ export default function OurProjectsLayout({
           "@type": "CreativeWork",
           name: "Plateforme SaaS",
           description: "Dashboard et application SaaS complète",
-          image: "https://arthur.dev/saas.png",
+          image: "https://Shift Agency/saas.png",
         },
         {
           "@type": "CreativeWork",
           name: "Landing Page",
           description: "Landing page performante et optimisée conversion",
-          image: "https://arthur.dev/landing.png",
+          image: "https://Shift Agency/landing.png",
         },
         {
           "@type": "CreativeWork",
           name: "Site Vitrine",
           description: "Site vitrine professionnel pour artisan",
-          image: "https://arthur.dev/artisan.png",
+          image: "https://Shift Agency/artisan.png",
         },
       ],
     },

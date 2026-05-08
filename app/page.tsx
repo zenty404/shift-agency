@@ -6,7 +6,7 @@ import Testimonials from "./components/Testimonials";
 import CTACalendly from "./components/CTACalendly";
 
 /* ═══════════════════════════════════════════════════════════
-   HOME PAGE — arthur.dev
+   HOME PAGE — Shift Agency
    ═══════════════════════════════════════════════════════════ */
 
 export default function Home() {

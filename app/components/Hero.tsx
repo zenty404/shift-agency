@@ -75,7 +75,7 @@ export default function Hero() {
   return (
     <section
       className="relative flex flex-col items-center justify-start overflow-hidden px-3 sm:px-6 pt-24 pb-20 sm:pb-24 md:pb-28"
-      aria-label="Accueil — arthur.dev, développement web et digital sur-mesure"
+      aria-label="Accueil — Shift Agency, développement web et digital sur-mesure"
     >
       {/* ── Corporate gradient background ── */}
       <div className="pointer-events-none absolute inset-0 z-0" aria-hidden="true">

@@ -139,7 +139,7 @@ export default function MentionsLegales() {
                 4. Propriété intellectuelle
               </h2>
               <p className="leading-relaxed">
-                Tous les contenus présents sur le site arthur.dev (textes,
+                Tous les contenus présents sur le site Shift Agency (textes,
                 images, vidéos, logos, etc.) sont protégés par les lois en
                 vigueur sur la propriété intellectuelle. Toute reproduction,
                 distribution, modification ou utilisation sans autorisation
@@ -153,7 +153,7 @@ export default function MentionsLegales() {
                 5. Cookies
               </h2>
               <p className="leading-relaxed">
-                Le site arthur.dev n&apos;utilise pas de cookies de tracking. Seuls des cookies techniques strictement nécessaires au fonctionnement du site peuvent être utilisés.
+                Le site Shift Agency n&apos;utilise pas de cookies de tracking. Seuls des cookies techniques strictement nécessaires au fonctionnement du site peuvent être utilisés.
               </p>
             </div>
 

@@ -61,7 +61,7 @@ interface Review {
 const ROW1_REVIEWS: Review[] = [
   {
     name: "Fey Taieb",
-    role: "Client arthur.dev",
+    role: "Client Shift Agency",
     text: "Arthur est professionnel, réactif. Les landing pages sont impeccables, aussi bien sur le design que sur la vitesse de chargement. Je recommande sans hésiter si vous cherchez un site efficace.",
     rating: 5,
   },
@@ -73,7 +73,7 @@ const ROW1_REVIEWS: Review[] = [
   },
   {
     name: "Elio Charnay",
-    role: "Client arthur.dev",
+    role: "Client Shift Agency",
     text: "Arthur a su répondre à mes attentes en réalisant un site selon mes besoins qui m'a permis d'améliorer ma présence en ligne. Merci !",
     rating: 5,
   },
@@ -85,7 +85,7 @@ const ROW1_REVIEWS: Review[] = [
   },
   {
     name: "Michael Clement",
-    role: "Client arthur.dev",
+    role: "Client Shift Agency",
     text: "Arthur m'a créé mon site Web. Tout s'est très bien passé, il explique très bien les choses, je recommande. Très rapide et très efficace.",
     rating: 5,
   },

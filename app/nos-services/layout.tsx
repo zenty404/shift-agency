@@ -6,7 +6,7 @@ import type { Metadata } from "next";
    ═══════════════════════════════════════════════════════════ */
 
 export const metadata: Metadata = {
-  title: "Nos Services | Sites Web, SaaS & Applications — arthur.dev",
+  title: "Nos Services | Sites Web, SaaS & Applications — Shift Agency",
   description:
     "Développement de sites vitrines, landing pages performantes et applications sur mesure. Pack Essentiel dès 490€, Performance 890€, Sur-mesure à partir de 1500€. Livraison rapide, code propriétaire.",
 
@@ -27,16 +27,16 @@ export const metadata: Metadata = {
     title: "Nos Services — Sites Web & Applications sur mesure",
     description:
       "Pack Essentiel dès 490€, Performance avec SEO local 890€, Sur-mesure à partir de 1500€. Livraison rapide, stack moderne.",
-    url: "https://arthur.dev/nos-services",
+    url: "https://Shift Agency/nos-services",
     type: "website",
     locale: "fr_FR",
-    siteName: "arthur.dev",
+    siteName: "Shift Agency",
     images: [
       {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "arthur.dev — Nos Services",
+        alt: "Shift Agency — Nos Services",
       },
     ],
   },
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
   },
 
   alternates: {
-    canonical: "https://arthur.dev/nos-services",
+    canonical: "https://Shift Agency/nos-services",
   },
 };
 
@@ -64,8 +64,8 @@ export default function NosServicesLayout({
     name: "Services de développement web et mobile",
     provider: {
       "@type": "ProfessionalService",
-      name: "arthur.dev",
-      url: "https://arthur.dev",
+      name: "Shift Agency",
+      url: "https://Shift Agency",
       address: {
         "@type": "PostalAddress",
         addressLocality: "Paris",

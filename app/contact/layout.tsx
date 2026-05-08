@@ -6,9 +6,9 @@ import type { Metadata } from "next";
    ═══════════════════════════════════════════════════════════ */
 
 export const metadata: Metadata = {
-  title: "Contact & Devis Gratuit | arthur.dev — Réponse sous 2h",
+  title: "Contact & Devis Gratuit | Shift Agency — Réponse sous 2h",
   description:
-    "Contactez arthur.dev pour votre projet web ou mobile. Réponse WhatsApp sous 2h, devis 100% gratuit, sans engagement. Email, téléphone. Basé à Paris.",
+    "Contactez Shift Agency pour votre projet web ou mobile. Réponse WhatsApp sous 2h, devis 100% gratuit, sans engagement. Email, téléphone. Basé à Paris.",
 
   keywords: [
     "contact agence web",
@@ -17,39 +17,39 @@ export const metadata: Metadata = {
     "contact développeur Paris",
     "WhatsApp agence web",
     "demande devis site",
-    "contact arthur.dev",
+    "contact Shift Agency",
     "projet web Paris",
     "développement sur mesure",
     "réponse rapide",
   ],
 
   openGraph: {
-    title: "Contact — Devis gratuit sous 24h | arthur.dev",
+    title: "Contact — Devis gratuit sous 24h | Shift Agency",
     description:
       "Réponse WhatsApp sous 2h. Devis 100% gratuit, sans engagement. contact@arthur-dev.eu",
-    url: "https://arthur.dev/contact",
+    url: "https://Shift Agency/contact",
     type: "website",
     locale: "fr_FR",
-    siteName: "arthur.dev",
+    siteName: "Shift Agency",
     images: [
       {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "arthur.dev — Contact",
+        alt: "Shift Agency — Contact",
       },
     ],
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "Contact — Devis gratuit | arthur.dev",
+    title: "Contact — Devis gratuit | Shift Agency",
     description: "Réponse sous 2h sur WhatsApp. Devis 100% gratuit.",
     images: ["/og-image.jpg"],
   },
 
   alternates: {
-    canonical: "https://arthur.dev/contact",
+    canonical: "https://Shift Agency/contact",
   },
 };
 
@@ -61,14 +61,14 @@ export default function ContactLayout({
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "ContactPage",
-    name: "Contact arthur.dev",
+    name: "Contact Shift Agency",
     description:
-      "Contactez arthur.dev pour votre projet web. Réponse rapide, devis gratuit.",
-    url: "https://arthur.dev/contact",
+      "Contactez Shift Agency pour votre projet web. Réponse rapide, devis gratuit.",
+    url: "https://Shift Agency/contact",
     mainEntity: {
       "@type": "Organization",
-      name: "arthur.dev",
-      url: "https://arthur.dev",
+      name: "Shift Agency",
+      url: "https://Shift Agency",
       email: "contact@arthur-dev.eu",
       telephone: "+33652379343",
       address: {

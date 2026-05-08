@@ -71,10 +71,10 @@ export default function Navbar() {
           {/* Logo icon */}
           <Link
             href="/"
-            aria-label="arthur.dev — Accueil"
+            aria-label="Shift Agency — Accueil"
             className="select-none cursor-pointer"
           >
-            <img src="/logo.svg" alt="arthur.dev" className="h-10 w-10" />
+            <img src="/logo.svg" alt="Shift Agency" className="h-10 w-10" />
           </Link>
 
           {/* Burger */}
@@ -170,12 +170,12 @@ export default function Navbar() {
             {/* Logo */}
             <Link
               href="/"
-              aria-label="arthur.dev — Accueil"
+              aria-label="Shift Agency — Accueil"
               className="relative select-none shrink-0 cursor-pointer"
             >
               <img
                 src="/arthurdev.svg"
-                alt="arthur.dev"
+                alt="Shift Agency"
                 className={`h-10 w-auto transition-all duration-500 ${
                   showFull ? "opacity-100 scale-100" : "opacity-0 scale-95"
                 }`}

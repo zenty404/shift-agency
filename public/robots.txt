@@ -1,0 +1,15 @@
+# arthur.dev - Robots.txt
+# https://arthur.dev/robots.txt
+
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://arthur.dev/sitemap.xml
+
+# Disallow admin/private areas (if any in the future)
+# Disallow: /admin/
+# Disallow: /api/
+
+# Crawl-delay (optional, only if needed)
+# Crawl-delay: 1

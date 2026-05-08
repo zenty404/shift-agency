@@ -1,0 +1,208 @@
+@import "tailwindcss";
+
+/* ═══ CUSTOM FONT FACES ═══ */
+/* Zalando – geometric sans-serif brand font for Ikovaline
+   Using Sora as a visually similar open-source substitute.
+   Replace these @font-face blocks with actual Zalando files when available. */
+
+/* ═══ TAILWIND v4 THEME TOKENS ═══ */
+@theme inline {
+  --color-background: #ffffff;
+  --color-foreground: #111111;
+  --color-blue: #4DB6F9;
+  --color-blue-light: #EFF8FF;
+  --color-gray-text: #6B7280;
+  --color-gray-border: #E5E7EB;
+  --color-gray-bg: #F8F9FA;
+  --color-dark-text: #374151;
+
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-sora), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-jetbrains), ui-monospace, monospace;
+
+  --shadow-brand: -82px 54px 27px 0px rgba(0,0,0,.01),-52px 35px 25px 0px rgba(0,0,0,.04),-29px 19px 21px 0px rgba(0,0,0,.15),-13px 9px 16px 0px rgba(0,0,0,.25),-3px 2px 9px 0px rgba(0,0,0,.29);
+}
+
+/* ═══ BASE STYLES ═══ */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #ffffff;
+  color: #111111;
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+/* Force light mode only */
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: light;
+  }
+}
+
+/* ═══ SELECTION ═══ */
+::selection {
+  background: #4DB6F9;
+  color: white;
+}
+
+/* ═══ SCROLLBAR ═══ */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+::-webkit-scrollbar-thumb {
+  background: #4DB6F9;
+  border-radius: 3px;
+}
+
+/* ═══ FOCUS RINGS ═══ */
+:focus-visible {
+  outline: 2px solid #4DB6F9;
+  outline-offset: 2px;
+}
+
+/* ═══ TYPEWRITER CURSOR ═══ */
+@keyframes blink-cursor {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.animate-blink {
+  animation: blink-cursor 1s step-end infinite;
+}
+
+/* ═══ LOADING BAR ═══ */
+@keyframes load-bar {
+  0% { width: 0%; }
+  80% { width: 100%; }
+  100% { width: 100%; }
+}
+
+.animate-load-bar {
+  animation: load-bar 4s ease-out infinite;
+}
+
+/* ═══ TERMINAL SCROLL ═══ */
+@keyframes terminal-scroll {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-50%); }
+}
+
+.animate-terminal {
+  animation: terminal-scroll 12s linear infinite;
+}
+
+/* ═══ STROKE DRAW ═══ */
+@keyframes draw-line {
+  0% { stroke-dashoffset: 200; }
+  100% { stroke-dashoffset: 0; }
+}
+
+.animate-draw {
+  animation: draw-line 3s ease-in-out infinite alternate;
+}
+
+/* ═══ COUNT-UP helper ═══ */
+@keyframes fade-up {
+  0% { opacity: 0; transform: translateY(30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* ═══ BARK BADGE OVERLAY ═══ */
+@keyframes barkOverlay1 { 0%,100% { transform: rotate(0deg); } 50% { transform: rotate(10deg); } }
+@keyframes barkOverlay2 { 0%,100% { transform: rotate(10deg); } 50% { transform: rotate(20deg); } }
+@keyframes barkOverlay3 { 0%,100% { transform: rotate(20deg); } 50% { transform: rotate(30deg); } }
+@keyframes barkOverlay4 { 0%,100% { transform: rotate(30deg); } 50% { transform: rotate(40deg); } }
+@keyframes barkOverlay5 { 0%,100% { transform: rotate(40deg); } 50% { transform: rotate(50deg); } }
+@keyframes barkOverlay7 { 0%,100% { transform: rotate(60deg); } 50% { transform: rotate(70deg); } }
+@keyframes barkOverlay10 { 0%,100% { transform: rotate(90deg); } 50% { transform: rotate(100deg); } }
+
+/* ═══ TESTIMONIAL SPOTLIGHT FADE ═══ */
+@keyframes testimonial-fade {
+  0% { opacity: 0; transform: translateY(8px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.animate-testimonial-fade {
+  animation: testimonial-fade 0.5s ease-out both;
+}
+
+/* ═══ MARQUEE ANIMATIONS ═══ */
+@keyframes marquee-left {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes marquee-right {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
+}
+
+.animate-marquee-left {
+  animation: marquee-left 45s linear infinite;
+}
+
+.animate-marquee-right {
+  animation: marquee-right 45s linear infinite;
+}
+
+/* ═══ LOGO CAROUSEL SCROLL ═══ */
+@keyframes scroll-logos {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-scroll-logos {
+  animation: scroll-logos 30s linear infinite;
+}
+
+/* ═══ REDUCED MOTION ═══ */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ═══ MOBILE PERF: GPU-promote animated elements ═══ */
+.animate-terminal,
+.animate-load-bar,
+.animate-draw,
+.animate-scroll-logos,
+.animate-marquee-left,
+.animate-marquee-right {
+  will-change: transform;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  transform: translateZ(0);
+}
+
+/* Smooth scroll behavior optimization */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* ═══ LINKEDIN EMBED STYLES ═══ */
+.linkedin-embed-wrapper {
+  @apply rounded-2xl overflow-hidden border border-gray-border/40 bg-white shadow-sm;
+}
+
+.linkedin-embed-wrapper iframe {
+  @apply w-full border-0;
+  min-height: 400px;
+}
+
+/* LinkedIn embeds are responsive by default, but ensure proper sizing */
+.linkedin-embed-wrapper iframe[src*="linkedin.com"] {
+  max-width: 100%;
+}
+

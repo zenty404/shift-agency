@@ -74,7 +74,7 @@ export default function Navbar() {
             aria-label="Shift Agency — Accueil"
             className="select-none cursor-pointer"
           >
-            <img src="/shift_logo.svg" alt="Shift Agency" className="h-10 w-10" />
+            <img src="/shift_logo.png" alt="Shift Agency" className="h-10 w-10" />
           </Link>
 
           {/* Burger */}
@@ -181,7 +181,7 @@ export default function Navbar() {
                 }`}
               />
               <img
-                src="/shift_logo.svg"
+                src="/shift_logo.png"
                 alt="Shift Agency"
                 className={`absolute top-1/2 left-0 -translate-y-1/2 h-14 w-14 transition-all duration-500 ${
                   !showFull ? "opacity-100 scale-100" : "opacity-0 scale-95"

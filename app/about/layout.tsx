@@ -68,7 +68,7 @@ export default function AboutLayout({
       "@type": "Organization",
       name: "Shift Agency",
       url: "https://arthur.dev",
-      logo: "https://arthur.dev/shift_logo.png",
+      logo: "https://arthur.dev/shift_logo.svg",
       foundingDate: "2024",
       address: {
         "@type": "PostalAddress",

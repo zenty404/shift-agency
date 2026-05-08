@@ -15,7 +15,7 @@ export default function MentionsLegales() {
           className="absolute inset-0"
           style={{
             background:
-              "radial-gradient(ellipse 70% 50% at 50% 25%, #4DB6F9 0%, #8ecdf6 40%, #ddf2fc 75%, #ffffff 100%)",
+              "radial-gradient(ellipse 70% 50% at 50% 25%, #062783 0%, #5C7BC8 40%, #D4DCEF 75%, #ffffff 100%)",
           }}
         />
       </div>

@@ -290,7 +290,7 @@ function DevelopmentIllustration() {
 
         @keyframes build-flash {
           0%, 60% { opacity: 0; box-shadow: none; }
-          65%, 80% { opacity: 1; box-shadow: inset 0 0 0 2px rgba(77,182,249,0.5); }
+          65%, 80% { opacity: 1; box-shadow: inset 0 0 0 2px rgba(6,39,131,0.5); }
           90%, 100% { opacity: 0; }
         }
         .custom-build-flash { animation: build-flash 7s ease-out infinite; }
@@ -311,7 +311,7 @@ function DevelopmentIllustration() {
         .custom-ping-stop { animation: stop-ping 7s infinite; }
 
         @keyframes dot-color {
-          0%, 60% { background-color: #4DB6F9; }
+          0%, 60% { background-color: #062783; }
           65%, 100% { background-color: #10b981; }
         }
         .custom-dot-color { animation: dot-color 7s infinite; }

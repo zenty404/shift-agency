@@ -102,9 +102,9 @@ function ArcCard({
         style={{
           scale,
           opacity: frameOpacity,
-          borderColor: isActive ? "rgba(77,182,249,0.3)" : "rgba(229,231,235,0.5)",
+          borderColor: isActive ? "rgba(6,39,131,0.3)" : "rgba(229,231,235,0.5)",
           boxShadow: isActive
-            ? "0 50px 100px -25px rgba(0,0,0,0.25), 0 30px 60px -30px rgba(77,182,249,0.15), inset 0 1px 0 0 rgba(255,255,255,0.8)"
+            ? "0 50px 100px -25px rgba(0,0,0,0.25), 0 30px 60px -30px rgba(6,39,131,0.15), inset 0 1px 0 0 rgba(255,255,255,0.8)"
             : "0 25px 60px -20px rgba(0,0,0,0.12), inset 0 1px 0 0 rgba(255,255,255,0.6)",
           transition: "border-color 500ms, box-shadow 500ms",
         }}
@@ -234,7 +234,7 @@ export default function Services() {
                 className="h-1 rounded-full shadow-sm"
                 style={{
                   width: i === activeIndex ? 56 : 16,
-                  background: i <= activeIndex ? "#4DB6F9" : "#E5E7EB",
+                  background: i <= activeIndex ? "#062783" : "#E5E7EB",
                   opacity: i < activeIndex ? 0.5 : 1,
                   transition:
                     "width 500ms cubic-bezier(0.16,1,0.3,1), background 400ms, opacity 400ms",
@@ -300,7 +300,7 @@ export default function Services() {
                       width: "calc(100% - 60px)",
                     }}
                   >
-                    <div className="overflow-hidden rounded-2xl border-2 border-gray-border/60 bg-white shadow-[0_25px_50px_-15px_rgba(77,182,249,0.2),0_10px_20px_-10px_rgba(0,0,0,0.1)]">
+                    <div className="overflow-hidden rounded-2xl border-2 border-gray-border/60 bg-white shadow-[0_25px_50px_-15px_rgba(6,39,131,0.2),0_10px_20px_-10px_rgba(0,0,0,0.1)]">
                       {/* Browser chrome */}
                       <div className="flex h-10 items-center gap-2 border-b-2 border-gray-border/40 bg-gradient-to-b from-gray-bg to-gray-bg/60 px-4">
                         <div className="h-[9px] w-[9px] rounded-full bg-[#FF5F57] shadow-sm" />
@@ -378,7 +378,7 @@ export default function Services() {
                     className="h-2 rounded-full transition-all duration-300"
                     style={{
                       width: i === activeIndex ? 32 : 8,
-                      background: i === activeIndex ? "#4DB6F9" : "#E5E7EB",
+                      background: i === activeIndex ? "#062783" : "#E5E7EB",
                     }}
                   />
                 </button>
@@ -414,12 +414,12 @@ export default function Services() {
         {/* Background glows */}
         <div
           className="pointer-events-none absolute -left-40 -top-40 h-[400px] w-[400px] rounded-full opacity-20 blur-[100px] lg:h-[600px] lg:w-[600px] lg:opacity-25 lg:blur-[120px]"
-          style={{ background: "#4DB6F9" }}
+          style={{ background: "#062783" }}
           aria-hidden="true"
         />
         <div
           className="pointer-events-none absolute -bottom-40 -right-40 hidden h-[500px] w-[500px] rounded-full opacity-15 blur-[120px] lg:block"
-          style={{ background: "#4DB6F9" }}
+          style={{ background: "#062783" }}
           aria-hidden="true"
         />
 
@@ -462,7 +462,7 @@ export default function Services() {
                   className="h-1 rounded-full shadow-sm"
                   style={{
                     width: i === activeIndex ? 56 : 16,
-                    background: i <= activeIndex ? "#4DB6F9" : "#E5E7EB",
+                    background: i <= activeIndex ? "#062783" : "#E5E7EB",
                     opacity: i < activeIndex ? 0.5 : 1,
                     transition:
                       "width 500ms cubic-bezier(0.16,1,0.3,1), background 400ms, opacity 400ms",
@@ -522,7 +522,7 @@ export default function Services() {
           <div className="relative hidden h-full w-[60%] lg:block">
             <div
               className="pointer-events-none absolute right-0 top-1/2 h-[360px] w-[500px] -translate-y-1/2 rounded-[60px] blur-[120px]"
-              style={{ background: "#4DB6F9", opacity: 0.1 }}
+              style={{ background: "#062783", opacity: 0.1 }}
               aria-hidden="true"
             />
 

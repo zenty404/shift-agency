@@ -243,9 +243,9 @@ export default function Quiz() {
                 <div
                   className={`flex h-9 w-9 items-center justify-center rounded-full text-xs font-semibold transition-all duration-300 ${
                     s < step
-                      ? "bg-blue text-white shadow-[0_4px_12px_-2px_rgba(77,182,249,0.4)]"
+                      ? "bg-blue text-white shadow-[0_4px_12px_-2px_rgba(6,39,131,0.4)]"
                       : s === step
-                        ? "bg-blue text-white shadow-[0_4px_12px_-2px_rgba(77,182,249,0.4)]"
+                        ? "bg-blue text-white shadow-[0_4px_12px_-2px_rgba(6,39,131,0.4)]"
                         : "bg-white border border-gray-border text-gray-text"
                   }`}
                 >
@@ -303,8 +303,8 @@ export default function Quiz() {
                     i === PROJECT_TYPES.length - 1 ? "sm:col-span-2 sm:max-w-[calc(50%-8px)] sm:mx-auto sm:w-full" : ""
                   } ${
                     projectType === p.id
-                      ? "border-blue bg-blue-light shadow-[0_8px_24px_-6px_rgba(77,182,249,0.2)]"
-                      : "border-gray-border/40 bg-white hover:border-blue/40 hover:bg-blue-light/30 hover:-translate-y-0.5 hover:shadow-[0_12px_28px_-8px_rgba(77,182,249,0.12)]"
+                      ? "border-blue bg-blue-light shadow-[0_8px_24px_-6px_rgba(6,39,131,0.2)]"
+                      : "border-gray-border/40 bg-white hover:border-blue/40 hover:bg-blue-light/30 hover:-translate-y-0.5 hover:shadow-[0_12px_28px_-8px_rgba(6,39,131,0.12)]"
                   }`}
                   style={{
                     transitionDelay: step === 0 ? `${i * 50}ms` : "0ms",
@@ -313,8 +313,8 @@ export default function Quiz() {
                   {/* Icon */}
                   <div className={`flex h-11 w-11 shrink-0 items-center justify-center rounded-xl transition-all duration-250 ${
                     projectType === p.id
-                      ? "bg-blue text-white shadow-[0_6px_16px_-3px_rgba(77,182,249,0.35)]"
-                      : "bg-blue-light text-gray-text group-hover:bg-blue group-hover:text-white group-hover:shadow-[0_6px_16px_-3px_rgba(77,182,249,0.35)]"
+                      ? "bg-blue text-white shadow-[0_6px_16px_-3px_rgba(6,39,131,0.35)]"
+                      : "bg-blue-light text-gray-text group-hover:bg-blue group-hover:text-white group-hover:shadow-[0_6px_16px_-3px_rgba(6,39,131,0.35)]"
                   }`}>
                     {p.icon}
                   </div>
@@ -356,8 +356,8 @@ export default function Quiz() {
                   onClick={() => handleFormulaSelect(f.id)}
                   className={`group flex flex-col gap-2 rounded-2xl border-[1.5px] p-6 text-left transition-all duration-250 cursor-pointer sm:flex-row sm:items-center sm:justify-between ${
                     formulaId === f.id
-                      ? "border-blue bg-blue-light shadow-[0_8px_24px_-6px_rgba(77,182,249,0.2)]"
-                      : "border-gray-border/40 bg-white hover:border-blue/40 hover:bg-blue-light/30 hover:shadow-[0_8px_20px_-6px_rgba(77,182,249,0.1)]"
+                      ? "border-blue bg-blue-light shadow-[0_8px_24px_-6px_rgba(6,39,131,0.2)]"
+                      : "border-gray-border/40 bg-white hover:border-blue/40 hover:bg-blue-light/30 hover:shadow-[0_8px_20px_-6px_rgba(6,39,131,0.1)]"
                   }`}
                   style={{
                     transitionDelay: step === 1 ? `${i * 40}ms` : "0ms",
@@ -414,7 +414,7 @@ export default function Quiz() {
                 {/* Header */}
                 <div className="relative bg-[#111111] px-6 py-7 sm:px-8 overflow-hidden">
                   {/* Subtle glow accent */}
-                  <div className="pointer-events-none absolute -top-20 -right-20 h-[200px] w-[200px] rounded-full opacity-15 blur-[60px]" style={{ background: "#4DB6F9" }} aria-hidden="true" />
+                  <div className="pointer-events-none absolute -top-20 -right-20 h-[200px] w-[200px] rounded-full opacity-15 blur-[60px]" style={{ background: "#062783" }} aria-hidden="true" />
                   <div className="relative flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
                     <div>
                       <div className="flex items-center gap-3 mb-1">
@@ -549,7 +549,7 @@ export default function Quiz() {
                                   name={f.name}
                                   rows={3}
                                   required={f.required}
-                                  className="w-full rounded-xl border border-gray-border/60 bg-white px-4 py-3 text-sm text-[#111111] placeholder:text-gray-text/40 transition-all duration-200 focus:border-blue focus:shadow-[0_0_0_3px_rgba(77,182,249,0.1)] focus:outline-none"
+                                  className="w-full rounded-xl border border-gray-border/60 bg-white px-4 py-3 text-sm text-[#111111] placeholder:text-gray-text/40 transition-all duration-200 focus:border-blue focus:shadow-[0_0_0_3px_rgba(6,39,131,0.1)] focus:outline-none"
                                   placeholder={f.label.replace(" (facultatif)", "").replace(" (optionnel)", "").replace(" ?", "")}
                                 />
                               ) : (
@@ -558,7 +558,7 @@ export default function Quiz() {
                                   name={f.name}
                                   type={f.type}
                                   required={f.required}
-                                  className="w-full rounded-xl border border-gray-border/60 bg-white px-4 py-3 text-sm text-[#111111] placeholder:text-gray-text/40 transition-all duration-200 focus:border-blue focus:shadow-[0_0_0_3px_rgba(77,182,249,0.1)] focus:outline-none"
+                                  className="w-full rounded-xl border border-gray-border/60 bg-white px-4 py-3 text-sm text-[#111111] placeholder:text-gray-text/40 transition-all duration-200 focus:border-blue focus:shadow-[0_0_0_3px_rgba(6,39,131,0.1)] focus:outline-none"
                                   placeholder={f.label.replace(" (facultatif)", "").replace(" (optionnel)", "")}
                                 />
                               )}

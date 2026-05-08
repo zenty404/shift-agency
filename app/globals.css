@@ -9,8 +9,8 @@
 @theme inline {
   --color-background: #ffffff;
   --color-foreground: #111111;
-  --color-blue: #4DB6F9;
-  --color-blue-light: #EFF8FF;
+  --color-blue: #062783;
+  --color-blue-light: #E8EBF5;
   --color-gray-text: #6B7280;
   --color-gray-border: #E5E7EB;
   --color-gray-bg: #F8F9FA;
@@ -44,7 +44,7 @@ body {
 
 /* ═══ SELECTION ═══ */
 ::selection {
-  background: #4DB6F9;
+  background: #062783;
   color: white;
 }
 
@@ -56,13 +56,13 @@ body {
   background: #ffffff;
 }
 ::-webkit-scrollbar-thumb {
-  background: #4DB6F9;
+  background: #062783;
   border-radius: 3px;
 }
 
 /* ═══ FOCUS RINGS ═══ */
 :focus-visible {
-  outline: 2px solid #4DB6F9;
+  outline: 2px solid #062783;
   outline-offset: 2px;
 }
 

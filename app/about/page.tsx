@@ -189,7 +189,7 @@ export default function About() {
           className="relative z-10 w-full
             rounded-[24px] sm:rounded-[32px] md:rounded-[40px]
             bg-blue-light/90 border border-blue/30
-            shadow-[0_8px_60px_-8px_rgba(77,182,249,0.35)]
+            shadow-[0_8px_60px_-8px_rgba(6,39,131,0.35)]
             flex flex-col items-center text-center
             px-6 sm:px-8 md:px-10 lg:px-14 py-8 sm:py-10 md:py-12"
           style={{
@@ -201,7 +201,7 @@ export default function About() {
           {/* Subtle inner glow (navy tone) */}
           <div
             className="pointer-events-none absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-[300px] sm:h-[450px] md:h-[550px] w-full rounded-full opacity-25 blur-[100px] sm:blur-[160px]"
-            style={{ background: "#4DB6F9" }}
+            style={{ background: "#062783" }}
             aria-hidden="true"
           />
 

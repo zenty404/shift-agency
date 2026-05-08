@@ -5,7 +5,7 @@ import ButtonBrand from "@/app/components/ButtonBrand";
 
 /* ═══════════════════════════════════════════════════════════
    CTA + CALENDLY SECTION
-   - Full #4DB6F9 background with grid overlay
+   - Full #062783 background with grid overlay
    - Split 50/50: reassurance left, Calendly embed right
    ═══════════════════════════════════════════════════════════ */
 

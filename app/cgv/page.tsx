@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import CTACalendly from "@/app/components/CTACalendly";
 
 /* ═══════════════════════════════════════════════════════════
    CONDITIONS GÉNÉRALES DE VENTE (CGV)
@@ -8,6 +9,7 @@ import Link from "next/link";
 
 export default function CGV() {
   return (
+    <>
     <section className="relative min-h-screen overflow-hidden bg-gray-bg">
       {/* Hero gradient */}
       <div className="pointer-events-none absolute inset-0 z-0">
@@ -150,5 +152,7 @@ export default function CGV() {
         </div>
       </div>
     </section>
+    <CTACalendly />
+    </>
   );
 }

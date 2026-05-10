@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import CTACalendly from "@/app/components/CTACalendly";
 
 /* ═══════════════════════════════════════════════════════════
    MENTIONS LÉGALES PAGE
@@ -8,6 +9,7 @@ import Link from "next/link";
 
 export default function MentionsLegales() {
   return (
+    <>
     <section className="relative min-h-screen overflow-hidden bg-gray-bg">
       {/* Hero gradient */}
       <div className="pointer-events-none absolute inset-0 z-0">
@@ -172,5 +174,7 @@ export default function MentionsLegales() {
         </div>
       </div>
     </section>
+    <CTACalendly />
+    </>
   );
 }

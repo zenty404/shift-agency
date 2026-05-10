@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import CTACalendly from "@/app/components/CTACalendly";
 
 /* ═══════════════════════════════════════════════════════════
    POLITIQUE DE CONFIDENTIALITÉ PAGE
@@ -8,6 +9,7 @@ import Link from "next/link";
 
 export default function PolitiqueConfidentialite() {
   return (
+    <>
     <section className="relative min-h-screen overflow-hidden bg-gray-bg">
       {/* Hero gradient */}
       <div className="pointer-events-none absolute inset-0 z-0">
@@ -132,5 +134,7 @@ export default function PolitiqueConfidentialite() {
         </div>
       </div>
     </section>
+    <CTACalendly />
+    </>
   );
 }

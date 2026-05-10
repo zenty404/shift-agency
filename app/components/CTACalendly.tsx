@@ -2,6 +2,7 @@
 
 import { useRef, useEffect, useState } from "react";
 import ButtonBrand from "@/app/components/ButtonBrand";
+import { CALENDLY_URL } from "@/lib/calendly";
 import { WHATSAPP_URL } from "@/lib/whatsapp";
 
 /* ═══════════════════════════════════════════════════════════
@@ -114,7 +115,7 @@ export default function CTACalendly() {
           <div className="flex-1">
             <div className="overflow-hidden rounded-xl bg-white shadow-2xl">
               <iframe
-                src="https://calendly.com/martinprofessionnel0/lancer-votre-projet-digital"
+                src={CALENDLY_URL}
                 title="Réserver un rendez-vous avec Shift Agency"
                 className="h-[580px] w-full border-0"
                 loading="lazy"

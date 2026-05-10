@@ -8,7 +8,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Nos Services | Sites Web, SaaS & Applications — Shift Agency",
   description:
-    "Développement de sites vitrines, landing pages performantes et applications sur mesure. Pack Essentiel dès 490€, Performance 890€, Sur-mesure à partir de 1500€. Livraison rapide, code propriétaire.",
+    "Développement de landings, sites vitrines et applications sur mesure. Pack OnConversion dès 1 000€, OnComplete 2 000€, OnTime sur devis. Livraison rapide, code propriétaire.",
 
   keywords: [
     "services développement web",
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Nos Services — Sites Web & Applications sur mesure",
     description:
-      "Pack Essentiel dès 490€, Performance avec SEO local 890€, Sur-mesure à partir de 1500€. Livraison rapide, stack moderne.",
+      "Pack OnConversion dès 1 000€, OnComplete avec SEO local 2 000€, OnTime sur devis. Livraison rapide, stack moderne.",
     url: "https://Shift Agency/nos-services",
     type: "website",
     locale: "fr_FR",
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Nos Services — Sites Web & Applications",
-    description: "Pack Essentiel 490€, Performance 890€, Sur-mesure dès 1500€. Stack moderne, livraison rapide.",
+    description: "Pack OnConversion 1 000€, OnComplete 2 000€, OnTime sur devis. Stack moderne, livraison rapide.",
     images: ["/og-image.jpg"],
   },
 
@@ -82,30 +82,30 @@ export default function NosServicesLayout({
           "@type": "Offer",
           itemOffered: {
             "@type": "Service",
-            name: "Pack Essentiel",
-            description: "Site vitrine 1 page, mobile-first, livré en 7 jours",
+            name: "Pack OnConversion",
+            description: "Landing page haute conversion, mobile-first, livrée en 7 jours",
           },
-          price: "490",
+          price: "1000",
           priceCurrency: "EUR",
         },
         {
           "@type": "Offer",
           itemOffered: {
             "@type": "Service",
-            name: "Pack Performance",
-            description: "Site multi-pages avec SEO local optimisé",
+            name: "Pack OnComplete",
+            description: "Site vitrine complet avec SEO local optimisé",
           },
-          price: "890",
+          price: "2000",
           priceCurrency: "EUR",
         },
         {
           "@type": "Offer",
           itemOffered: {
             "@type": "Service",
-            name: "Pack Sur-mesure",
-            description: "Application technique, dashboard, intégrations avancées",
+            name: "Pack OnTime",
+            description: "Web app, dashboard et automatisations avancées",
           },
-          price: "1500",
+          price: "8000",
           priceCurrency: "EUR",
         },
       ],

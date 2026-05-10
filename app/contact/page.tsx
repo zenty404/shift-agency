@@ -169,6 +169,11 @@ export default function Contact() {
                 Parlons de votre projet.
               </span>
             </RevealLine>
+            <RevealLine delay={250} loaded={loaded}>
+              <span className="text-[clamp(2.2rem,8vw,7rem)] font-bold text-[#0F172A]">
+                On répond vite.
+              </span>
+            </RevealLine>
           </h1>
 
           {/* Subtitle */}
@@ -180,7 +185,7 @@ export default function Contact() {
               transition: "all 800ms cubic-bezier(0.22, 1, 0.36, 1) 600ms",
             }}
           >
-            Réponse sous 2h sur WhatsApp · Devis gratuit · Sans engagement
+           Votre projet est livré rapidement et avec la qualité que vous méritez.
           </p>
 
           {/* Dual CTAs */}
@@ -228,7 +233,7 @@ export default function Contact() {
           >
             <MetricCard value="2h" label="Réponse WhatsApp" delay={900} loaded={loaded} />
             <MetricCard value="24h" label="Devis gratuit" delay={1000} loaded={loaded} />
-            <MetricCard value="100%" label="Gratuit" delay={1100} loaded={loaded} />
+            <MetricCard value="5★" label="Avis Google" delay={1100} loaded={loaded} />
             <MetricCard value="0€" label="Premier échange" delay={1200} loaded={loaded} />
           </div>
 
@@ -244,7 +249,7 @@ export default function Contact() {
             onSubmit={(e) => e.preventDefault()}
           >
             <h2 className="font-display text-2xl font-bold text-[#111111] mb-6">
-              Envoyez-nous un message
+              Décrivez le projet — on vous dit si on match
             </h2>
             <div className="grid gap-5 sm:grid-cols-2">
               {FIELDS.map((f) => (
@@ -327,7 +332,11 @@ export default function Contact() {
             {/* Reassurance */}
             <div className="rounded-xl border border-gray-border/40 bg-white p-5">
               <ul className="space-y-2">
-                {["Réponse WhatsApp sous 2h", "Devis 100% gratuit", "Pas d'abonnement mensuel"].map(
+                {[
+                  "Réponse WhatsApp en ~2 h",
+                  "Devis gratuit, sans engagement",
+                  "Pas d’abonnement — vous êtes propriétaire",
+                ].map(
                   (item) => (
                     <li key={item} className="flex items-center gap-2">
                       <svg width="14" height="14" viewBox="0 0 14 14" fill="none" className="shrink-0 text-blue">

@@ -25,7 +25,7 @@ const STATS = [
     value: 7,
     suffix: "j",
     label: "Livraison rapide",
-    description: "Dès 490€",
+    description: "Dès 1 000€",
     icon: (
       <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
         <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09Z" />
@@ -91,7 +91,7 @@ const ROW1_REVIEWS: Review[] = [
   },
   {
     name: "Marie Dubois",
-    role: "Artisan boulangère",
+    role: "Boulangère artisanale",
     text: "Mon site vitrine est exactement ce dont j'avais besoin pour attirer de nouveaux clients. Simple, élégant et optimisé pour mobile. Parfait !",
     rating: 5,
   },
@@ -119,7 +119,7 @@ const ROW2_REVIEWS: Review[] = [
   {
     name: "Camille Rousseau",
     role: "Naturopathe",
-    text: "Communication fluide, délais respectés, résultat au-delà de mes espérances. Arthur a vraiment écouté mes besoins et y a répondu avec précision.",
+    text: "Communication fluide, délais respectés, résultat au-delà de mes attentes. Arthur a vraiment écouté mes besoins et y a répondu avec précision.",
     rating: 5,
   },
   {

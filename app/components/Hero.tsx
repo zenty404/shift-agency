@@ -178,7 +178,7 @@ export default function Hero() {
           </RevealLine>
           <RevealLine delay={250} loaded={loaded}>
             <span className="text-[clamp(2.2rem,8vw,7rem)] font-bold text-[#0F172A]">
-              De l&apos;idée au déploiement.
+              Qui réussit pour de vrai.
             </span>
           </RevealLine>
         </h1>
@@ -192,7 +192,7 @@ export default function Hero() {
             transition: "opacity 800ms cubic-bezier(0.22, 1, 0.36, 1) 600ms, transform 800ms cubic-bezier(0.22, 1, 0.36, 1) 600ms",
           }}
         >
-          Sites web rapides et efficaces pour artisans, coachs et entrepreneurs. Sans abonnement mensuel.
+          Nous concevons des landing, sites web et application sur-mesure qui vous aident à atteindre vos objectifs.
         </p>
 
         {/* Dual CTAs */}
@@ -238,7 +238,7 @@ export default function Hero() {
           <MetricCard value="7j" label="Livraison rapide" delay={900} loaded={loaded} />
           <MetricCard value="5★" label="Avis Google" delay={1000} loaded={loaded} />
           <MetricCard value="2h" label="Réponse WhatsApp" delay={1100} loaded={loaded} />
-          <MetricCard value="490€" label="Dès" delay={1200} loaded={loaded} />
+          <MetricCard value="1 000€" label="Dès" delay={1200} loaded={loaded} />
         </div>
 
       </div>

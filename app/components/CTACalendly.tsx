@@ -10,7 +10,7 @@ import ButtonBrand from "@/app/components/ButtonBrand";
    ═══════════════════════════════════════════════════════════ */
 
 const REASSURANCE = [
-  "Réponse WhatsApp sous 2h",
+  "Réponse sous 24h",
   "Devis 100% gratuit",
   "Pas d'abonnement mensuel",
 ];

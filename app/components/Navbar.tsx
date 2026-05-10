@@ -135,7 +135,7 @@ export default function Navbar() {
                 transform: mobileOpen ? "translateY(0)" : "translateY(12px)",
               }}
             >
-              Démarrer un projet
+              Lancer mon projet
             </Link>
           </div>
         </div>
@@ -233,9 +233,9 @@ export default function Navbar() {
                   ? "rounded-full px-5 py-2 text-[13px] hover:bg-[#111111]/90"
                   : "rounded-full px-4 py-1.5 text-[12px] hover:bg-[#111111]/90"
               }`}
-              aria-label="Démarrer un projet"
+              aria-label="Lancer mon projet"
             >
-              {showFull ? "Démarrer un projet" : "Contact"}
+              {showFull ? "Lancer mon projet" : "Contact"}
             </Link>
           </div>
         </nav>

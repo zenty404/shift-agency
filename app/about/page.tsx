@@ -10,22 +10,22 @@ import ButtonBrand from "@/app/components/ButtonBrand";
    ═══════════════════════════════════════════════════════════ */
 
 const EXPERTISES = [
-  "Développement de sites web sur mesure (vitrines, e-commerce, SaaS)",
-  "Création d'applications web et mobiles performantes",
-  "Intégration d'outils d'automatisation et d'IA",
-  "Référencement SEO / SEA",
-  "Stratégies d'acquisition et de conversion",
-  "Design UX/UI orienté business",
+  "Landings haute conversion",
+  "Sites vitrine complets qui posent votre autorité",
+  "Web apps, dashboards et automatisations",
+  "Des sites pensés pour vous apporter des clients, pas juste beau",
+  "Un design pro et un copy qui fait booker",
+  "UX/UI orientée objectifs business, pas vanity metrics",
 ];
 
 const ADN = [
   {
     title: "Livraison rapide",
-    desc: "7 jours pour un site vitrine, pas 3 mois.",
+    desc: "On livre : landing en ~7 jours, vitrine en ~2 semaines, outil sur-mesure en ~30 jours.",
   },
   {
     title: "Prix transparent",
-    desc: "490€, 890€, ou sur-mesure. Pas de frais cachés.",
+    desc: "1 000 €, 2 000 €, sur-mesure dès 8 000 €. Pas de frais cachés.",
   },
   {
     title: "Sans abonnement",
@@ -241,9 +241,8 @@ export default function About() {
               transition: "all 800ms cubic-bezier(0.22, 1, 0.36, 1) 600ms",
             }}
           >
-            Shift Agency est une agence de développement web basée à Paris.
-            Nous créons des sites performants pour artisans, coachs et entrepreneurs.
-            Sites livrés en 7 jours, sans abonnement mensuel.
+           
+           Nous concevons des landing, sites web et application sur-mesure qui vous aident à atteindre vos objectifs. En bref des projets qui servent votre business.
           </p>
 
           {/* Dual CTAs */}
@@ -256,7 +255,7 @@ export default function About() {
             }}
           >
             <ButtonBrand href="/contact" aria-label="Parlons de votre projet">
-              Parlons de votre projet
+              Lancer mon projet
             </ButtonBrand>
             <Link
               href="/nos-services"
@@ -303,23 +302,20 @@ export default function About() {
               Notre histoire
             </span>
             <h2 className="mt-3 font-display text-2xl font-bold text-[#111111] sm:text-3xl tracking-[-0.02em]">
-              Pas une agence de plus.
+              Pas une agence qui « verrouille » votre site.
             </h2>
           </div>
           <div className="space-y-4 text-base text-gray-text leading-relaxed">
             <p>
-              Shift Agency est né d&apos;une conviction simple : les artisans et entrepreneurs
-              méritent des sites web professionnels, rapides à obtenir et sans se ruiner
-              en abonnements mensuels.
+              On a créé Shift Agency pour une chose : que votre projet digital réussisse
+              pour de vrai. Votre objectif business, on l'atteint, votre site doit servir votre business, pas l'inverse.
             </p>
             <p>
-              Pas une simple agence corporate, mais un service direct et efficace.
-              Sites livrés en 7 jours, propriété totale du client, pas de frais cachés.
+              Des sites qui vendent enfin, fini les sites juste beaux. On vous livre un site beau et pensé pour convertir.
             </p>
             <p>
-              Chaque projet est traité avec le même niveau d&apos;exigence technique,
-              que ce soit un site vitrine à 490€ ou une application sur-mesure.
-              Le but : vous rendre visible en ligne, rapidement.
+              On vous rend visible, crédible, attractif sans vous enfermer
+              dans un abonnement. 
             </p>
           </div>
         </div>
@@ -330,14 +326,14 @@ export default function About() {
         <div className="mx-auto max-w-[1100px] grid gap-12 lg:grid-cols-2 lg:items-center">
           <div className="order-2 lg:order-1 space-y-4 text-base text-gray-text leading-relaxed">
             <p>
-              Shift Agency repose sur un modèle simple : développement rapide,
-              prix fixe, livraison en 7 à 10 jours. Pas de surprises, pas d&apos;abonnement,
-              vous êtes propriétaire de tout.
+              Un modèle simple : prix annoncé, délais tenus, transfert total à la livraison
+              (comptes, repo, hébergement). Pas de « surprise » à trois mois, pas de licence
+              cachée.
             </p>
             <p>
-              Ce modèle permet d&apos;allier rapidité et qualité sans vous ruiner.
-              Sites vitrines dès 490€, sites multi-pages dès 890€, applications sur-mesure
-              dès 1500€. Hébergement et maintenance première année inclus.
+              OnConversion dès 1 000 € · OnComplete dès 2 000 € · OnTime sur devis.
+              On parle WhatsApp en ~2 h, on cadre en call court, et on démarre le projet.
+              Satisfait ou remboursé 14 jours sur les packs éligibles.
             </p>
           </div>
           <div className="order-1 lg:order-2">
@@ -400,7 +396,7 @@ export default function About() {
               Nos expertises
             </span>
             <h2 className="mt-3 font-display text-2xl font-bold text-[#111111] sm:text-3xl tracking-[-0.02em]">
-              Ce qu&apos;on maîtrise.
+              Nos réalisations au quotidien.
             </h2>
           </div>
           <ul className="space-y-4">
@@ -424,7 +420,7 @@ export default function About() {
               Notre ADN
             </span>
             <h2 className="mt-3 font-display text-2xl font-bold text-white sm:text-3xl tracking-[-0.02em]">
-              Ce qui nous définit.
+              Ce que les avis Google résument.
             </h2>
           </div>
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
@@ -452,13 +448,13 @@ export default function About() {
             Notre vision
           </span>
           <h2 className="mt-3 font-display text-2xl font-bold text-[#111111] sm:text-3xl tracking-[-0.02em]">
-            Sites web accessibles pour tous les entrepreneurs.
+            Un digital premium, sans jargon ni cage.
           </h2>
           <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:justify-center sm:gap-6">
             {[
-              "Rapide : Votre site en ligne en 7 jours, pas en 3 mois.",
-              "Accessible : Dès 490€, sans abonnement qui vous plombe.",
-              "Professionnel : Design moderne, code propre, optimisé mobile.",
+              "On vous rend tous vos projets dans des délais rapides.",
+              "Pas d'abonnement qui vous ruine à la longue, juste un projet qui vous sert vraiment.",
+              "Être crédible, professionnel et générer des contacts.",
             ].map((v) => (
               <div
                 key={v}
@@ -474,15 +470,14 @@ export default function About() {
       {/* ── CTA ── */}
       <section className="bg-blue py-20 px-6 text-center">
         <h2 className="font-display text-2xl font-bold text-white sm:text-5xl mb-4">
-          Prêt à lancer votre site ?
+          Votre projet digital. On le rend réel.
         </h2>
         <p className="text-white/70 text-2xl max-w-xl mx-auto mb-8">
-          Sites vitrines, e-commerce, applications sur-mesure.
-          Livraison rapide, prix transparent, sans abonnement.
+          On se pose 30 min pour voir si on peut vous aider. Et si oui on démarre direct.
         </p>
-        <p className="text-white/50 text-sm mb-6">Réponse sous 2h · Devis gratuit</p>
+        <p className="text-white/50 text-sm mb-6">WhatsApp ~2 h · Devis gratuit · Sans engagement</p>
         <ButtonBrand href="/contact">
-          Demander un devis
+          Lancer mon projet
         </ButtonBrand>
       </section>
     </div>

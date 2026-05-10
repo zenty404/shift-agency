@@ -13,60 +13,63 @@ import ButtonBrand from "@/app/components/ButtonBrand";
 const OFFERS = [
   {
     num: "01",
-    title: "Pack Essentiel",
-    headline: "Site vitrine 1 page. Mobile-first. Livré en 7 jours.",
+    title: "Pack OnConversion",
+    headline:
+      "Landing page haute conversion. Votre trafic devient des demandes qualifiées en ~7 jours.",
     blocage:
-      "Vous perdez des clients parce que vous n'avez pas de présence en ligne professionnelle.",
+      "Vous envoyez encore vos prospects sur une bio Instagram ou un PDF : zéro preuve sociale, zéro clarté, zéro conversion.",
     solution:
-      "On crée votre site vitrine 1 page en 7 jours. Design mobile-first, modules interactifs, WhatsApp intégré.",
+      "Une landing qui convertit et est compréhensible en moins de 3 secondes. Satisfait ou remboursé 14 jours.",
     results: [
-      "Site professionnel en 7 jours",
-      "Optimisé mobile",
-      "WhatsApp intégré",
-      "Vous êtes propriétaire (pas d'abonnement)",
+      "Live en ~7 jours",
+      "Plus de leads qualifiés",
+      "Crédibilité immédiate ",
+      "Rapide, SEO-ready, évolutif",
     ],
     process: ["Brief", "Design", "Développement", "Livraison"],
     delay: "7 jours",
-    price: "490 € HT",
-    cta: "Commander maintenant",
+    price: "1 000 € HT",
+    cta: "Je veux ma landing",
   },
   {
     num: "02",
-    title: "Pack Performance",
-    headline: "Site multi-pages avec SEO local. Plus de visibilité, plus de clients.",
+    title: "Pack OnComplete",
+    headline:
+      "Site vitrine complet. Vos prospects comprennent, vous crédibilisent, puis vous contactent.",
     blocage:
-      "Votre site existe mais personne ne vous trouve sur Google. Vous n'avez pas d'outils pour convertir.",
+      "On vous trouve mal sur Google, ou votre site actuel ne raconte pas assez vite ce que vous vendez, vous perdez des leads au silence.",
     solution:
-      "Site multi-pages avec SEO local optimisé, intégration Google Maps et Calendly. Hébergement premium inclus.",
+      "Un site qui assure une autorité digne des plus grands. Vos prospects comprennent qui vous êtes et ont envie de travailler avec vous.",
     results: [
-      "Visibilité Google locale",
-      "Design 100% personnalisé",
-      "Intégrations complètes",
-      "Hébergement premium inclus",
+      "Visibilité locale et pages qui respirent le pro",
+      "Parcours clair : comprendre → croire → booker",
+      "Des leads qui vous contactent",
+      "Rapide, SEO-ready, évolutif",
     ],
     process: ["Cadrage", "Design", "SEO", "Livraison"],
-    delay: "10 jours",
-    price: "890 € HT",
-    cta: "Lancer mon projet",
+    delay: "14 jours",
+    price: "2 000 € HT",
+    cta: "Je veux être crédible",
   },
   {
     num: "03",
-    title: "Pack Sur-mesure",
-    headline: "Application technique. Dashboard. Intégrations avancées.",
+    title: "Pack OnTime",
+    headline:
+      "Web app & automatisation. Un outil sur-mesure pour gagner du temps et scaler proprement.",
     blocage:
-      "Vous avez besoin d'une solution technique spécifique que les templates ne peuvent pas résoudre.",
+      "Vous perdez des heures chaque semaine sur des tâches manuelles, ou votre produit a besoin d’un vrai back-office pas d’un template générique.",
     solution:
-      "Architecture Next.js/React sur-mesure, dashboards personnalisés, intégrations Stripe et bases de données.",
+      "Une application sur-mesure qui fera gagner au moins +15 h/semaine à vos équipes.",
     results: [
-      "Solution technique adaptée",
-      "Architecture évolutive",
-      "Intégrations avancées",
-      "Code propriétaire",
+      "Outil aligné sur votre workflow réel",
+      "Évolutif : on itère tant que l'objectif n'est pas atteint",
+      "Rapide, évolutif et performant",
+      "Repo + infra remis entre vos mains",
     ],
     process: ["Audit", "Architecture", "Développement", "Déploiement"],
     delay: "Sur devis",
-    price: "Dès 1 500 € HT",
-    cta: "Discuter du projet",
+    price: "Dès 8 000 € HT",
+    cta: "Récupérer vos 15h",
   },
 ];
 
@@ -319,12 +322,12 @@ export default function NosServices() {
           <h1 className="font-display leading-[1.08] tracking-[-0.02em]">
             <RevealLine delay={150} loaded={loaded}>
               <span className="text-[clamp(2.2rem,8vw,7rem)] font-bold text-[#0F172A]">
-                Des projets qui avancent
+                Trois packs.
               </span>
             </RevealLine>
             <RevealLine delay={250} loaded={loaded}>
               <span className="text-[clamp(2.2rem,8vw,7rem)] font-bold text-[#0F172A]">
-                vraiment.
+                Qui réussissent pour de vrai.
               </span>
             </RevealLine>
           </h1>
@@ -338,8 +341,7 @@ export default function NosServices() {
               transition: "all 800ms cubic-bezier(0.22, 1, 0.36, 1) 600ms",
             }}
           >
-            Trois offres claires pour avancer sans hésitation.
-            Si votre projet n&apos;est pas prêt, on vous le dira.
+            Pack OnConversion, Pack OnComplete, Pack OnTime. Une réponse rapide, des projets qui avance et des clients satisfait. Si le projet n&apos;est pas mûr, on vous le dit.
           </p>
 
           {/* Dual CTAs */}
@@ -385,7 +387,7 @@ export default function NosServices() {
             <MetricCard value="7j" label="Livraison rapide" delay={900} loaded={loaded} />
             <MetricCard value="5★" label="Avis Google" delay={1000} loaded={loaded} />
             <MetricCard value="2h" label="Réponse WhatsApp" delay={1100} loaded={loaded} />
-            <MetricCard value="490€" label="Dès" delay={1200} loaded={loaded} />
+            <MetricCard value="1 000€" label="Dès" delay={1200} loaded={loaded} />
           </div>
 
         </div>
@@ -403,13 +405,13 @@ export default function NosServices() {
       {/* ── CTA final ── */}
             <section className="bg-blue py-20 px-6 text-center">
               <h2 className="font-display text-2xl font-bold text-white sm:text-5xl mb-4">
-                Un projet en tête ?
+                Prêt à lancer votre projet ?
               </h2>
               <p className="text-white/70 text-2xl max-w-xl mx-auto mb-8">
-                Discutons de votre projet. Réponse sous 2h sur WhatsApp.
+                On cadre un court échange de 30 min pour voir si on peut lancer votre projet.
               </p>
               <ButtonBrand href="/contact">
-                Réserver un créneau
+                Lancer votre projet
               </ButtonBrand>
             </section>
           </div>

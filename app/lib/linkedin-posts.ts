@@ -35,9 +35,9 @@ export type AuthorId = keyof typeof AUTHORS;
 // ── Catégories (pour les filtres) ──
 export const CATEGORIES = [
   { id: "all", label: "Tout voir" },
-  { id: "arthur", label: "Postes d'Arthur Lasnier" },
+  { id: "arthur", label: "Publications d'Arthur Lasnier" },
   // Ajoutez votre associé ici quand il sera défini :
-  // { id: "associe", label: "Postes de [Nom Associé]" },
+  // { id: "associe", label: "Publications de [Nom Associé]" },
 ] as const;
 
 // ── Type d'un post ──

@@ -11,10 +11,10 @@ import ButtonBrand from "@/app/components/ButtonBrand";
    ═══════════════════════════════════════════════════════════ */
 
 const STATS = [
-  { value: "+50", label: "Sites conçus pour déclencher une décision" },
-  { value: "5/5", label: "Sur Google" },
-  { value: "+20", label: "Applications utilisées en conditions réelles" },
-  { value: "+1k", label: "Audience construite sur l'expertise" },
+  { value: "100+", label: "Projets livrés — landings, vitrines, apps" },
+  { value: "5/5", label: "Note Google · avis clients" },
+  { value: "7j", label: "Délai type Pack OnConversion" },
+  { value: "1 000€", label: "Point d’entrée transparent" },
 ];
 
 /* ── Staggered line reveal for H1 ── */
@@ -166,12 +166,12 @@ export default function OurProjects() {
           <h1 className="font-display leading-[1.08] tracking-[-0.02em]">
             <RevealLine delay={150} loaded={loaded}>
               <span className="text-[clamp(2.2rem,8vw,7rem)] font-bold text-[#0F172A]">
-                Projets réels.
+              Nos derniers projets.
               </span>
             </RevealLine>
             <RevealLine delay={250} loaded={loaded}>
               <span className="text-[clamp(2.2rem,8vw,7rem)] font-bold text-[#0F172A]">
-                Contrôle total.
+              Pensés pour la performance.
               </span>
             </RevealLine>
           </h1>
@@ -185,8 +185,8 @@ export default function OurProjects() {
               transition: "all 800ms cubic-bezier(0.22, 1, 0.36, 1) 600ms",
             }}
           >
-            À la livraison, le contrôle est intégralement transmis au client. Comptes, clés d&apos;accès,
-            infrastructures et droits sont remis et documentés. Nous n&apos;exploitons aucun accès caché.
+            Découvrez nos réalisations récentes : des interfaces soignées,
+            orientées résultats et conçues pour durer.
           </p>
 
           {/* Dual CTAs */}
@@ -199,7 +199,7 @@ export default function OurProjects() {
             }}
           >
             <ButtonBrand href="/contact" aria-label="Travaillons ensemble">
-              Travaillons ensemble
+              Lancer mon projet
             </ButtonBrand>
             <Link
               href="/nos-services"
@@ -272,10 +272,11 @@ export default function OurProjects() {
               </span>
             </div>
             <h2 className="font-display text-3xl font-bold text-[#0F172A] sm:text-5xl mb-4">
-              Nos réalisations
+              Nos réalisations au quotidien
             </h2>
             <p className="text-gray-text text-lg max-w-2xl mx-auto">
-              Sites vitrines, SaaS, applications mobiles et e-commerce. Chaque projet est conçu pour performer.
+              Chaque réalisation est pensée
+              pour convertir, rassurer ou automatiser.
             </p>
           </div>
 
@@ -383,13 +384,13 @@ export default function OurProjects() {
       {/* ── CTA final ── */}
       <section className="bg-blue py-20 px-6 text-center">
         <h2 className="font-display text-2xl font-bold text-white sm:text-5xl mb-4">
-          Un projet en tête ?
+          Votre tour d’être un cas d’étude ?
         </h2>
         <p className="text-white/70 text-2xl max-w-xl mx-auto mb-8">
-          Discutons de votre projet. Réponse sous 2h sur WhatsApp.
+         En 30 min on pose tout à plat vos objectifs et besoins pour savoir si on peut vous aider.
         </p>
         <ButtonBrand href="/contact">
-          Réserver un créneau
+          Lancer mon projet
         </ButtonBrand>
       </section>
     </div>

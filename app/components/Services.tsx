@@ -17,26 +17,26 @@ import ButtonBrand from "@/app/components/ButtonBrand";
 
 const STEPS = [
   {
-    title: "Pack Essentiel",
+    title: "Pack OnConversion (Landing Page)",
     description:
-      "Site vitrine 1 page, design mobile-first avec modules interactifs. Livraison en 7 jours. Parfait pour artisans et indépendants.",
-    features: ["Livraison 7j", "Mobile-first", "WhatsApp intégré"],
+      "On transforme votre trafic en client en 7 jours. Vous obtiendrez une landing qui fera signer vos futurs clients.",
+    features: ["Livraison 7 jours", "Haute conversion", "Satisfait ou remboursé 14j"],
     image: "/clement.png",
     naturalScale: false,
   },
   {
-    title: "Pack Performance",
+    title: "Pack OnComplete (Site Vitrine)",
     description:
-      "Site multi-pages avec SEO local optimisé, intégration Google Maps et Calendly. Hébergement premium inclus.",
-    features: ["Livraison 15j", "SEO local", "Outils externes"],
+      "Vos futurs clients comprendront en 3 secondes ce que vous faites. Établissez une autorité immédiate. Un design si pro que la confiance est acquise avant même le premier appel.",
+    features: ["Un site complet", "Livraison en 2 semaines", "Satisfait ou remboursé 14j"],
     image: "/artisan.png",
     naturalScale: true,
   },
   {
-    title: "Pack Sur-mesure",
+    title: "Pack OnTime (Web App & Automatisation)",
     description:
-      "Architecture technique Next.js/React, dashboards personnalisés, intégrations avancées (Stripe, BDD). Accompagnement stratégique complet.",
-    features: ["Sur devis", "Next.js/React", "Dashboards"],
+      "Gagner +15 h/semaine pour vos équipes avec un outil sur-mesure livré en ~30 jours. L'outil sera tellement bien que vos équipes ne voudront pas le lâcher.",
+    features: ["Livraison ~30 jours", "Gagner +15 h/semaine", "Itérations gratuites"],
     image: "/saas.png",
     naturalScale: false,
   },

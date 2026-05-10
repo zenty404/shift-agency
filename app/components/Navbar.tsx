@@ -3,6 +3,7 @@
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import { NAV_LINKS } from "@/app/lib/constants";
+import { WHATSAPP_URL } from "@/lib/whatsapp";
 
 /* ═══════════════════════════════════════════════════════════
    NAVBAR — Floating Pill (DA Ikovaline)
@@ -125,8 +126,10 @@ export default function Navbar() {
                 {link.label}
               </Link>
             ))}
-            <Link
-              href="/contact"
+            <a
+              href={WHATSAPP_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               onClick={() => setMobileOpen(false)}
               className="mt-4 inline-flex items-center justify-center rounded-full bg-[#111111] px-8 py-4 text-[15px] font-medium text-white transition-all duration-300 cursor-pointer"
               style={{
@@ -136,7 +139,7 @@ export default function Navbar() {
               }}
             >
               Lancer mon projet
-            </Link>
+            </a>
           </div>
         </div>
       </div>
@@ -217,26 +220,30 @@ export default function Navbar() {
                   : "opacity-0 pointer-events-none"
               }`}
             >
-              <Link
-                href="/contact"
+              <a
+                href={WHATSAPP_URL}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center rounded-[8px] bg-gray-bg px-4 py-1.5 text-[12px] font-medium font-display text-[#111111] transition-all duration-200 hover:bg-gray-border/50 cursor-pointer whitespace-nowrap"
               >
                 Prendre un appel
-              </Link>
+              </a>
             </div>
 
             {/* CTA */}
-            <Link
-              href="/contact"
+            <a
+              href={WHATSAPP_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               className={`inline-flex items-center bg-[#111111] font-medium font-display text-white transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] shrink-0 cursor-pointer whitespace-nowrap ${
                 showFull
                   ? "rounded-full px-5 py-2 text-[13px] hover:bg-[#111111]/90"
                   : "rounded-full px-4 py-1.5 text-[12px] hover:bg-[#111111]/90"
               }`}
-              aria-label="Lancer mon projet"
+              aria-label="Lancer mon projet sur WhatsApp"
             >
               {showFull ? "Lancer mon projet" : "Contact"}
-            </Link>
+            </a>
           </div>
         </nav>
       </div>

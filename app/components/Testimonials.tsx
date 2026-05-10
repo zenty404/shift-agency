@@ -2,6 +2,7 @@
 
 import { useRef, useEffect, useState, useCallback } from "react";
 import Link from "next/link";
+import { WHATSAPP_URL } from "@/lib/whatsapp";
 
 /* ═══════════════════════════════════════════════════════════
    TESTIMONIALS — Awards Strip + Double Marquee + Trust Bar
@@ -391,11 +392,13 @@ export default function Testimonials() {
               Ce qu&apos;en disent nos clients.
             </h2>
           </div>
-          <Link
-            href="/contact"
+          <a
+            href={WHATSAPP_URL}
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center gap-2 self-start rounded-xl border border-gray-border px-5 py-2.5 text-sm font-medium text-[#111111] transition-colors hover:bg-white sm:self-auto"
           >
-            Rejoindre ces entreprises
+            WhatsApp — lancer mon projet
             <svg
               width="14"
               height="14"
@@ -411,7 +414,7 @@ export default function Testimonials() {
                 strokeLinejoin="round"
               />
             </svg>
-          </Link>
+          </a>
         </div>
       </div>
 

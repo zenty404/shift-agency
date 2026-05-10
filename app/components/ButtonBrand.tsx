@@ -62,6 +62,22 @@ export default function ButtonBrand({
     );
   }
 
+  if (href && /^https?:\/\//.test(href)) {
+    return (
+      <a
+        href={href}
+        className={cls}
+        style={mergedStyle}
+        target="_blank"
+        rel="noopener noreferrer"
+        {...rest}
+      >
+        {children}
+        {arrow && <Arrow />}
+      </a>
+    );
+  }
+
   // Internal navigation (/contact, etc.)
   if (href) {
     return (

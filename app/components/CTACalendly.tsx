@@ -2,6 +2,8 @@
 
 import { useRef, useEffect, useState } from "react";
 import ButtonBrand from "@/app/components/ButtonBrand";
+import { CALENDLY_URL } from "@/lib/calendly";
+import { WHATSAPP_URL } from "@/lib/whatsapp";
 
 /* ═══════════════════════════════════════════════════════════
    CTA + CALENDLY SECTION
@@ -10,7 +12,7 @@ import ButtonBrand from "@/app/components/ButtonBrand";
    ═══════════════════════════════════════════════════════════ */
 
 const REASSURANCE = [
-  "Réponse WhatsApp sous 2h",
+  "Réponse sous 24h",
   "Devis 100% gratuit",
   "Pas d'abonnement mensuel",
 ];
@@ -95,14 +97,17 @@ export default function CTACalendly() {
             </ul>
 
             {/* Alternative CTA */}
-            <div className="mt-10">
-              <ButtonBrand
-                href="mailto:contact@arthur-dev.eu"
-                arrow={false}
-              >
-                Ou écrivez-nous directement
+            <div className="mt-10 flex flex-col gap-3 sm:items-start">
+              <ButtonBrand href={WHATSAPP_URL} arrow={false}>
+                Discuter sur WhatsApp
                 <span aria-hidden="true">→</span>
               </ButtonBrand>
+              <a
+                href="mailto:contact@arthur-dev.eu"
+                className="text-sm font-medium text-white/80 underline-offset-4 transition-colors hover:text-white hover:underline"
+              >
+                Ou par email
+              </a>
             </div>
           </div>
 
@@ -110,7 +115,7 @@ export default function CTACalendly() {
           <div className="flex-1">
             <div className="overflow-hidden rounded-xl bg-white shadow-2xl">
               <iframe
-                src="https://calendly.com/arthur-lasnier77700/consultation-projet"
+                src={CALENDLY_URL}
                 title="Réserver un rendez-vous avec Shift Agency"
                 className="h-[580px] w-full border-0"
                 loading="lazy"

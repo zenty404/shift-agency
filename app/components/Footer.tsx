@@ -3,6 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useState, useEffect } from "react";
+import { WHATSAPP_DISPLAY, WHATSAPP_URL } from "@/lib/whatsapp";
 
 /* ═══════════════════════════════════════════════════════════
    FOOTER — Corporate avec horloges multiples + grand logo
@@ -61,18 +62,18 @@ export default function Footer() {
               <div className="flex flex-col gap-1.5 text-sm font-light leading-relaxed text-gray-text">
                 <p>Paris, France</p>
                 <a
-                  href="mailto:contact@arthur-dev.eu"
-                  className="mt-2 text-foreground transition-colors hover:text-blue"
-                >
-                  contact@arthur-dev.eu
-                </a>
-                <a
-                  href="https://wa.me/33652379343"
+                  href={WHATSAPP_URL}
                   target="_blank"
                   rel="noopener noreferrer"
+                  className="mt-2 text-foreground transition-colors hover:text-blue"
+                >
+                  WhatsApp: {WHATSAPP_DISPLAY}
+                </a>
+                <a
+                  href="mailto:contact@arthur-dev.eu"
                   className="text-foreground transition-colors hover:text-blue"
                 >
-                  WhatsApp: 06 52 37 93 43
+                  contact@arthur-dev.eu
                 </a>
               </div>
 

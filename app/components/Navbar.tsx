@@ -3,6 +3,7 @@
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import { NAV_LINKS } from "@/app/lib/constants";
+import { WHATSAPP_URL } from "@/lib/whatsapp";
 
 /* ═══════════════════════════════════════════════════════════
    NAVBAR — Floating Pill (DA Ikovaline)
@@ -135,7 +136,7 @@ export default function Navbar() {
                 transform: mobileOpen ? "translateY(0)" : "translateY(12px)",
               }}
             >
-              Démarrer un projet
+              Lancer mon projet
             </Link>
           </div>
         </div>
@@ -217,12 +218,14 @@ export default function Navbar() {
                   : "opacity-0 pointer-events-none"
               }`}
             >
-              <Link
-                href="/contact"
+              <a
+                href={WHATSAPP_URL}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center rounded-[8px] bg-gray-bg px-4 py-1.5 text-[12px] font-medium font-display text-[#111111] transition-all duration-200 hover:bg-gray-border/50 cursor-pointer whitespace-nowrap"
               >
                 Prendre un appel
-              </Link>
+              </a>
             </div>
 
             {/* CTA */}
@@ -233,9 +236,9 @@ export default function Navbar() {
                   ? "rounded-full px-5 py-2 text-[13px] hover:bg-[#111111]/90"
                   : "rounded-full px-4 py-1.5 text-[12px] hover:bg-[#111111]/90"
               }`}
-              aria-label="Démarrer un projet"
+              aria-label="Lancer mon projet — page contact"
             >
-              {showFull ? "Démarrer un projet" : "Contact"}
+              {showFull ? "Lancer mon projet" : "Contact"}
             </Link>
           </div>
         </nav>

@@ -15,20 +15,9 @@ import ButtonBrand from "@/app/components/ButtonBrand";
 
 const PROJECT_TYPES = [
   {
-    id: "site-vitrine",
-    label: "Site Vitrine",
-    desc: "1 page ou multi-pages",
-    icon: (
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-        <circle cx="12" cy="12" r="10" />
-        <path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z" />
-      </svg>
-    ),
-  },
-  {
     id: "landing-page",
     label: "Landing Page",
-    desc: "Conversion maximale",
+    desc: "Pack OnConversion: Trafic → clients en 7 jours",
     icon: (
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
         <rect x="2" y="3" width="20" height="14" rx="2" />
@@ -37,9 +26,20 @@ const PROJECT_TYPES = [
     ),
   },
   {
+    id: "site-vitrine",
+    label: "Site Vitrine",
+    desc: "Pack OnComplete: Clarté & autorité en 3 secondes",
+    icon: (
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+        <circle cx="12" cy="12" r="10" />
+        <path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z" />
+      </svg>
+    ),
+  },
+  {
     id: "projet-custom",
-    label: "Projet Sur-mesure",
-    desc: "Application ou système",
+    label: "Web App & Automatisation",
+    desc: "Pack OnTime: +15 h / semaine pour vos équipes",
     icon: (
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
         <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83" />
@@ -63,88 +63,71 @@ interface Formula {
 }
 
 const FORMULAS: Record<string, Formula[]> = {
-  "site-vitrine": [
-    {
-      id: "pack-essentiel",
-      label: "Pack Essentiel",
-      tagline: "Site vitrine 1 page mobile-first. Livraison rapide.",
-      priceMin: "490",
-      priceMax: null,
-      delay: "7 jours",
-      features: [
-        "Design mobile-first responsive",
-        "Modules interactifs",
-        "Bouton d'appel d'urgence",
-        "Intégration WhatsApp",
-        "Formulaire de contact",
-        "Hébergement + domaine 1ère année inclus",
-        "Propriété du site (pas d'abonnement)",
-      ],
-      objective: "Présence en ligne rapide et efficace pour artisans et indépendants.",
-      result: "Site professionnel en 7 jours, optimisé mobile, vous êtes propriétaire.",
-    },
-    {
-      id: "pack-performance",
-      label: "Pack Performance",
-      tagline: "Site multi-pages avec SEO local optimisé.",
-      priceMin: "890",
-      priceMax: null,
-      delay: "10 jours",
-      features: [
-        "Design 100% personnalisé",
-        "SEO local avancé",
-        "Intégration Google Maps",
-        "Intégration Calendly",
-        "Hébergement premium inclus",
-        "Structuration contenu",
-        "Domaine + hébergement 1ère année inclus",
-        "Propriété du site (pas d'abonnement)",
-      ],
-      objective: "Visibilité locale maximale et génération de leads qualifiés.",
-      result: "Site professionnel multi-pages, optimisé SEO, intégrations complètes.",
-    },
-  ],
   "landing-page": [
     {
-      id: "pack-essentiel",
-      label: "Pack Essentiel",
-      tagline: "Landing page 1 page optimisée conversion.",
-      priceMin: "490",
+      id: "pack-onconversion",
+      label: "Pack OnConversion (Landing Page)",
+      tagline:
+        "On transforme votre trafic en client en 7 jours. Vous obtiendrez une landing qui fera signer vos futurs clients.",
+      priceMin: "1 000",
       priceMax: null,
       delay: "7 jours",
       features: [
-        "Design mobile-first",
-        "Structure optimisée conversion",
-        "Call-to-action stratégiques",
-        "Formulaire de contact",
-        "Intégration WhatsApp",
+        "Landing unique pensée pour la conversion + design premium secteur",
+        "Développement Next.js & Tailwind — chargement instantané",
+        "Copywriting orienté psychologie de vente",
+        "SEO technique & balisage sémantique",
         "Hébergement + domaine 1ère année inclus",
         "Propriété du site (pas d'abonnement)",
+        "Satisfait ou remboursé 14 jours après mise en ligne",
       ],
-      objective: "Conversion maximale pour une offre spécifique.",
-      result: "Landing page professionnelle prête en 7 jours.",
+      objective: "Convertir le trafic (ads, réseaux) en demandes qualifiées.",
+      result:
+        "Taux de conversion et crédibilité renforcés, performance type PageSpeed visée vers 90/100.",
+    },
+  ],
+  "site-vitrine": [
+    {
+      id: "pack-oncomplete",
+      label: "Pack OnComplete (Site Vitrine)",
+      tagline:
+        "Vos futurs clients comprendront en 3 secondes ce que vous faites. Établissez une autorité immédiate. Un design si pro que la confiance est acquise avant même le premier appel.",
+      priceMin: "2 000",
+      priceMax: null,
+      delay: "2 semaines",
+      features: [
+        "Architecture jusqu'à 8 pages (Accueil, Services, À propos, Contact…)",
+        "Module blog optimisé SEO",
+        "Design sur-mesure (méthodologie OKLCH)",
+        "Formulaires intelligents + connexion CRM / email",
+        "Hébergement premium + domaine 1ère année inclus",
+        "Propriété du site (pas d'abonnement)",
+        "Satisfait ou remboursé 14 jours après livraison finale",
+      ],
+      objective: "Présenter toute votre activité avec une image premium et un SEO durable.",
+      result: "Site complet qui renforce la confiance et votre référencement sur le long terme.",
     },
   ],
   "projet-custom": [
     {
-      id: "pack-surmesure",
-      label: "Pack Sur-mesure",
-      tagline: "Architecture Next.js/React, dashboards, intégrations avancées.",
-      priceMin: "1 500",
+      id: "pack-ontime",
+      label: "Pack OnTime (Web App & Automatisation)",
+      tagline:
+        "Gagner +15 h/semaine pour vos équipes avec un outil sur-mesure livré en ~30 jours. Un outil qui fera gagner du temps à vos équipes et vous fera gagner de l'argent à vous.",
+      priceMin: null,
       priceMax: null,
-      delay: "Sur devis",
+      delay: "~30 jours",
       features: [
-        "Architecture technique Next.js/React",
-        "Dashboards personnalisés",
-        "Intégrations avancées (Stripe, BDD)",
-        "Fonctionnalités métier spécifiques",
-        "Accompagnement stratégique",
-        "Hébergement scalable",
-        "Documentation technique complète",
+        "Web app sur-mesure (SaaS interne, dashboard, outil métier)",
+        "Automatisation des flux (contrats, stocks, emails, facturation…)",
+        "UI pensée pour l'adoption immédiate par les équipes",
+        "Backend sécurisé et scalable",
+        "Documentation & transfert de compétences",
         "Propriété complète du code",
+        "Itérations gratuites jusqu'à l'objectif de productivité validé ensemble",
       ],
-      objective: "Solution technique sur-mesure pour projets complexes.",
-      result: "Application ou système adapté à vos besoins exacts.",
+      objective: "Éliminer les tâches répétitives et centraliser les données pour décider plus vite.",
+      result: "Gain de temps massif, moins d'erreurs, outil aligné sur votre façon de travailler.",
     },
   ],
 };

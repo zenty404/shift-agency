@@ -70,7 +70,7 @@ export default function ContactLayout({
       name: "Shift Agency",
       url: "https://Shift Agency",
       email: "contact@arthur-dev.eu",
-      telephone: "+33652379343",
+      telephone: "+33784639701",
       address: {
         "@type": "PostalAddress",
         addressLocality: "Paris",
@@ -79,7 +79,7 @@ export default function ContactLayout({
       contactPoint: [
         {
           "@type": "ContactPoint",
-          telephone: "+33652379343",
+          telephone: "+33784639701",
           contactType: "customer service",
           availableLanguage: ["French"],
           areaServed: "FR",

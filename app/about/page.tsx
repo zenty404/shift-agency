@@ -4,28 +4,30 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { useVisible } from "@/app/hooks/useVisible";
 import ButtonBrand from "@/app/components/ButtonBrand";
+import CTACalendly from "@/app/components/CTACalendly";
+import { WHATSAPP_URL } from "@/lib/whatsapp";
 
 /* ═══════════════════════════════════════════════════════════
    À PROPOS — Long-form editorial with alternating sections
    ═══════════════════════════════════════════════════════════ */
 
 const EXPERTISES = [
-  "Développement de sites web sur mesure (vitrines, e-commerce, SaaS)",
-  "Création d'applications web et mobiles performantes",
-  "Intégration d'outils d'automatisation et d'IA",
-  "Référencement SEO / SEA",
-  "Stratégies d'acquisition et de conversion",
-  "Design UX/UI orienté business",
+  "Landings haute conversion",
+  "Sites vitrine complets qui posent votre autorité",
+  "Web apps, dashboards et automatisations",
+  "Des sites pensés pour vous apporter des clients, pas juste beau",
+  "Un design pro et un copy qui fait booker",
+  "UX/UI orientée objectifs business, pas vanity metrics",
 ];
 
 const ADN = [
   {
     title: "Livraison rapide",
-    desc: "7 jours pour un site vitrine, pas 3 mois.",
+    desc: "On livre : landing en ~7 jours, vitrine en ~2 semaines, outil sur-mesure en ~30 jours.",
   },
   {
     title: "Prix transparent",
-    desc: "490€, 890€, ou sur-mesure. Pas de frais cachés.",
+    desc: "1 000 €, 2 000 €, sur-mesure dès 8 000 €. Pas de frais cachés.",
   },
   {
     title: "Sans abonnement",
@@ -138,6 +140,7 @@ export default function About() {
   }, []);
 
   return (
+    <>
     <div className="bg-white">
       {/* ── Hero ── */}
       <section
@@ -241,9 +244,8 @@ export default function About() {
               transition: "all 800ms cubic-bezier(0.22, 1, 0.36, 1) 600ms",
             }}
           >
-            Shift Agency est une agence de développement web basée à Paris.
-            Nous créons des sites performants pour artisans, coachs et entrepreneurs.
-            Sites livrés en 7 jours, sans abonnement mensuel.
+           
+           Nous concevons des landing, sites web et application sur-mesure qui vous aident à atteindre vos objectifs. En bref des projets qui servent votre business.
           </p>
 
           {/* Dual CTAs */}
@@ -255,8 +257,11 @@ export default function About() {
               transition: "all 800ms cubic-bezier(0.22, 1, 0.36, 1) 750ms",
             }}
           >
-            <ButtonBrand href="/contact" aria-label="Parlons de votre projet">
-              Parlons de votre projet
+            <ButtonBrand href={WHATSAPP_URL} aria-label="Contacter sur WhatsApp">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" className="mr-2" aria-hidden="true">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+              </svg>
+              Lancer mon projet
             </ButtonBrand>
             <Link
               href="/nos-services"
@@ -303,23 +308,20 @@ export default function About() {
               Notre histoire
             </span>
             <h2 className="mt-3 font-display text-2xl font-bold text-[#111111] sm:text-3xl tracking-[-0.02em]">
-              Pas une agence de plus.
+              Pas une agence qui « verrouille » votre site.
             </h2>
           </div>
           <div className="space-y-4 text-base text-gray-text leading-relaxed">
             <p>
-              Shift Agency est né d&apos;une conviction simple : les artisans et entrepreneurs
-              méritent des sites web professionnels, rapides à obtenir et sans se ruiner
-              en abonnements mensuels.
+              On a créé Shift Agency pour une chose : que votre projet digital réussisse
+              pour de vrai. Votre objectif business, on l'atteint, votre site doit servir votre business, pas l'inverse.
             </p>
             <p>
-              Pas une simple agence corporate, mais un service direct et efficace.
-              Sites livrés en 7 jours, propriété totale du client, pas de frais cachés.
+              Des sites qui vendent enfin, fini les sites juste beaux. On vous livre un site beau et pensé pour convertir.
             </p>
             <p>
-              Chaque projet est traité avec le même niveau d&apos;exigence technique,
-              que ce soit un site vitrine à 490€ ou une application sur-mesure.
-              Le but : vous rendre visible en ligne, rapidement.
+              On vous rend visible, crédible, attractif sans vous enfermer
+              dans un abonnement. 
             </p>
           </div>
         </div>
@@ -330,14 +332,14 @@ export default function About() {
         <div className="mx-auto max-w-[1100px] grid gap-12 lg:grid-cols-2 lg:items-center">
           <div className="order-2 lg:order-1 space-y-4 text-base text-gray-text leading-relaxed">
             <p>
-              Shift Agency repose sur un modèle simple : développement rapide,
-              prix fixe, livraison en 7 à 10 jours. Pas de surprises, pas d&apos;abonnement,
-              vous êtes propriétaire de tout.
+              Un modèle simple : prix annoncé, délais tenus, transfert total à la livraison
+              (comptes, repo, hébergement). Pas de « surprise » à trois mois, pas de licence
+              cachée.
             </p>
             <p>
-              Ce modèle permet d&apos;allier rapidité et qualité sans vous ruiner.
-              Sites vitrines dès 490€, sites multi-pages dès 890€, applications sur-mesure
-              dès 1500€. Hébergement et maintenance première année inclus.
+              OnConversion dès 1 000 € · OnComplete dès 2 000 € · OnTime sur devis.
+              On parle WhatsApp en ~2 h, on cadre en call court, et on démarre le projet.
+              Satisfait ou remboursé 14 jours sur les packs éligibles.
             </p>
           </div>
           <div className="order-1 lg:order-2">
@@ -400,7 +402,7 @@ export default function About() {
               Nos expertises
             </span>
             <h2 className="mt-3 font-display text-2xl font-bold text-[#111111] sm:text-3xl tracking-[-0.02em]">
-              Ce qu&apos;on maîtrise.
+              Nos réalisations au quotidien.
             </h2>
           </div>
           <ul className="space-y-4">
@@ -424,7 +426,7 @@ export default function About() {
               Notre ADN
             </span>
             <h2 className="mt-3 font-display text-2xl font-bold text-white sm:text-3xl tracking-[-0.02em]">
-              Ce qui nous définit.
+              Ce que les avis Google résument.
             </h2>
           </div>
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
@@ -452,13 +454,13 @@ export default function About() {
             Notre vision
           </span>
           <h2 className="mt-3 font-display text-2xl font-bold text-[#111111] sm:text-3xl tracking-[-0.02em]">
-            Sites web accessibles pour tous les entrepreneurs.
+            Un digital premium, sans jargon ni cage.
           </h2>
           <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:justify-center sm:gap-6">
             {[
-              "Rapide : Votre site en ligne en 7 jours, pas en 3 mois.",
-              "Accessible : Dès 490€, sans abonnement qui vous plombe.",
-              "Professionnel : Design moderne, code propre, optimisé mobile.",
+              "On vous rend tous vos projets dans des délais rapides.",
+              "Pas d'abonnement qui vous ruine à la longue, juste un projet qui vous sert vraiment.",
+              "Être crédible, professionnel et générer des contacts.",
             ].map((v) => (
               <div
                 key={v}
@@ -471,20 +473,8 @@ export default function About() {
         </div>
       </Section>
 
-      {/* ── CTA ── */}
-      <section className="bg-blue py-20 px-6 text-center">
-        <h2 className="font-display text-2xl font-bold text-white sm:text-5xl mb-4">
-          Prêt à lancer votre site ?
-        </h2>
-        <p className="text-white/70 text-2xl max-w-xl mx-auto mb-8">
-          Sites vitrines, e-commerce, applications sur-mesure.
-          Livraison rapide, prix transparent, sans abonnement.
-        </p>
-        <p className="text-white/50 text-sm mb-6">Réponse sous 2h · Devis gratuit</p>
-        <ButtonBrand href="/contact">
-          Demander un devis
-        </ButtonBrand>
-      </section>
     </div>
+    <CTACalendly />
+    </>
   );
 }

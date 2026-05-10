@@ -4,6 +4,8 @@ import { useEffect, useState, useRef, useCallback } from "react";
 import Link from "next/link";
 import { useVisible } from "@/app/hooks/useVisible";
 import ButtonBrand from "@/app/components/ButtonBrand";
+import CTACalendly from "@/app/components/CTACalendly";
+import { WHATSAPP_URL } from "@/lib/whatsapp";
 import LinkedInPost from "@/app/components/LinkedInPost";
 import { CATEGORIES, getPostsByAuthor } from "@/app/lib/linkedin-posts";
 import type { LinkedInPostData } from "@/app/lib/linkedin-posts";
@@ -190,6 +192,7 @@ export default function RessourcesLinkedin() {
   }, []);
 
   return (
+    <>
     <div className="bg-white">
       {/* ── Hero ── */}
       <section
@@ -462,19 +465,8 @@ export default function RessourcesLinkedin() {
         </div> 
       </section>
 
-      {/* ── CTA final ── */}
-            <section className="bg-blue py-20 px-6 text-center">
-              <h2 className="font-display text-2xl font-bold text-white sm:text-5xl mb-4">
-                Un projet en tête ?
-              </h2>
-              <p className="text-white/70 text-2xl max-w-xl mx-auto mb-8">
-                Discutons de votre projet. Réponse sous 2h sur WhatsApp.
-              </p>
-              <ButtonBrand href="/contact">
-                Réserver un créneau
-              </ButtonBrand>
-            </section>
-
     </div>
+    <CTACalendly />
+    </>
   );
 }

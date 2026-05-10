@@ -17,26 +17,26 @@ import ButtonBrand from "@/app/components/ButtonBrand";
 
 const STEPS = [
   {
-    title: "Pack Essentiel",
+    title: "Pack OnConversion (Landing Page)",
     description:
-      "Site vitrine 1 page, design mobile-first avec modules interactifs. Livraison en 7 jours. Parfait pour artisans et indépendants.",
-    features: ["Livraison 7j", "Mobile-first", "WhatsApp intégré"],
+      "On transforme votre trafic en client en 7 jours. Vous obtiendrez une landing qui fera signer vos futurs clients.",
+    features: ["Livraison 7 jours", "Haute conversion", "Satisfait ou remboursé 14j"],
     image: "/clement.png",
     naturalScale: false,
   },
   {
-    title: "Pack Performance",
+    title: "Pack OnComplete (Site Vitrine)",
     description:
-      "Site multi-pages avec SEO local optimisé, intégration Google Maps et Calendly. Hébergement premium inclus.",
-    features: ["Livraison 15j", "SEO local", "Outils externes"],
+      "Vos futurs clients comprendront en 3 secondes ce que vous faites. Établissez une autorité immédiate. Un design si pro que la confiance est acquise avant même le premier appel.",
+    features: ["Un site complet", "Livraison en 2 semaines", "Satisfait ou remboursé 14j"],
     image: "/artisan.png",
     naturalScale: true,
   },
   {
-    title: "Pack Sur-mesure",
+    title: "Pack OnTime (Web App & Automatisation)",
     description:
-      "Architecture technique Next.js/React, dashboards personnalisés, intégrations avancées (Stripe, BDD). Accompagnement stratégique complet.",
-    features: ["Sur devis", "Next.js/React", "Dashboards"],
+      "Gagner +15 h/semaine pour vos équipes avec un outil sur-mesure livré en ~30 jours. L'outil sera tellement bien que vos équipes ne voudront pas le lâcher.",
+    features: ["Livraison ~30 jours", "Gagner +15 h/semaine", "Itérations gratuites"],
     image: "/saas.png",
     naturalScale: false,
   },
@@ -244,11 +244,11 @@ export default function Services() {
           </div>
 
           {/* Texte dynamique */}
-          <div className="relative mb-6 min-h-[140px] sm:min-h-[160px]">
+          <div className="grid mb-6">
             {STEPS.map((step, i) => (
               <div
                 key={i}
-                className="absolute inset-0"
+                className="col-start-1 row-start-1"
                 style={{
                   opacity: i === activeIndex ? 1 : 0,
                   transform:
@@ -428,7 +428,7 @@ export default function Services() {
           {/* ─── Left: texte dynamique ─── */}
           <div className="flex w-full flex-col justify-center lg:w-[40%] lg:pr-16">
             {/* Badge */}
-            <div className="mb-4 inline-flex w-fit items-center gap-2.5 rounded-full border-2 border-gray-border/60 bg-white px-5 py-2 shadow-sm lg:mb-10">
+            <div className="mb-4 inline-flex w-fit items-center gap-2.5 rounded-full border-2 border-gray-border/60 bg-white px-5 py-2 shadow-sm lg:mb-6">
               <svg width="16" height="16" viewBox="0 0 14 14" fill="none" className="text-blue">
                 <path
                   d="M5 3l4 4-4 4"
@@ -444,7 +444,7 @@ export default function Services() {
             </div>
 
             {/* Compteur d'étape */}
-            <div className="mb-3 flex items-baseline gap-1.5 font-mono lg:mb-7">
+            <div className="mb-3 flex items-baseline gap-1.5 font-mono lg:mb-4">
               <span className="text-3xl font-bold tabular-nums text-[#111111] lg:text-4xl">
                 {String(activeIndex + 1).padStart(2, "0")}
               </span>
@@ -455,7 +455,7 @@ export default function Services() {
             </div>
 
             {/* Barre de progression */}
-            <div className="mb-6 flex gap-2 lg:mb-12">
+            <div className="mb-6 flex gap-2 lg:mb-6">
               {STEPS.map((_, i) => (
                 <div
                   key={i}
@@ -471,12 +471,12 @@ export default function Services() {
               ))}
             </div>
 
-            {/* Blocs de texte animés */}
-            <div className="relative min-h-[220px] lg:min-h-[320px]">
+            {/* Blocs de texte animés avec grid pour éviter tout chevauchement */}
+            <div className="grid mb-6 lg:mb-6">
               {STEPS.map((step, i) => (
                 <div
                   key={i}
-                  className="absolute inset-0"
+                  className="col-start-1 row-start-1 flex flex-col justify-start"
                   style={{
                     opacity: i === activeIndex ? 1 : 0,
                     transform:
@@ -490,13 +490,13 @@ export default function Services() {
                     pointerEvents: i === activeIndex ? "auto" : "none",
                   }}
                 >
-                  <h2 className="mb-3 font-display text-[clamp(1.75rem,5vw,3.5rem)] font-bold leading-[1.08] tracking-[-0.04em] text-[#111111] lg:mb-6">
+                  <h2 className="mb-3 font-display text-[clamp(1.75rem,5vw,3rem)] font-bold leading-[1.08] tracking-[-0.04em] text-[#111111] lg:mb-4">
                     {step.title}
                   </h2>
-                  <p className="mb-4 max-w-md text-[15px] leading-[1.65] text-gray-text lg:mb-7 lg:text-[17px] lg:leading-[1.75]">
+                  <p className="mb-5 max-w-md text-[15px] leading-[1.65] text-gray-text lg:mb-6 lg:text-[16px] lg:leading-[1.6]">
                     {step.description}
                   </p>
-                  <div className="flex flex-wrap gap-2 mb-5 lg:gap-2.5 lg:mb-8">
+                  <div className="flex flex-wrap gap-2 lg:gap-2.5">
                     {step.features.map((f) => (
                       <span
                         key={f}
@@ -511,7 +511,7 @@ export default function Services() {
             </div>
 
             {/* CTA */}
-            <div className="mt-4 lg:mt-8">
+            <div>
               <ButtonBrand href="/nos-services" aria-label="Découvrir nos offres">
                 Découvrir nos offres
               </ButtonBrand>

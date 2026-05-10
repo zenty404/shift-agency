@@ -19,22 +19,22 @@ const STEPS = [
   {
     num: "01",
     title: "Brief rapide",
-    desc: "On échange par WhatsApp ou appel pour comprendre votre activité, vos besoins et vos objectifs. Simple et direct.",
+    desc: "On échange par WhatsApp ou appel pour comprendre votre activité, vos besoins et vos objectifs.",
   },
   {
     num: "02",
-    title: "Design et validation",
-    desc: "Je crée la maquette de votre site. Vous validez le design avant que je commence le développement. Pas de surprise.",
+    title: "Conception",
+    desc: "On crée une maquette de votre projet que vous acceptez ou non. Vous êtes sûr que le résultat vous plaît.",
   },
   {
     num: "03",
     title: "Développement",
-    desc: "Je développe votre site en suivant les meilleures pratiques. Code propre, rapide et optimisé pour mobile.",
+    desc: "On développe votre projet en suivant les meilleures pratiques et vos objectifs précédemment définis. Aucune mauvaise surprise.",
   },
   {
     num: "04",
-    title: "Livraison et formation",
-    desc: "Je mets votre site en ligne, je vous explique comment l'utiliser. Vous êtes autonome et propriétaire du site.",
+    title: "Livraison",
+    desc: "On met votre projet en ligne, on vous explique comment l'utiliser. Vous êtes autonome et propriétaire du projet.",
   },
 ];
 
@@ -478,7 +478,7 @@ export default function Process() {
             Notre Processus
           </p>
           <h2 className="mb-6 font-display text-5xl sm:text-6xl lg:text-7xl font-bold leading-tight text-[#111111]">
-            Un process clair, en 4 étapes
+            Un processus clair, en 4 étapes
           </h2>
           <p className="text-lg lg:text-xl text-gray-text leading-relaxed max-w-2xl mx-auto">
             On avance étape par étape : vous savez ce qu'on fait, pourquoi on le fait, et ce qui vient ensuite.

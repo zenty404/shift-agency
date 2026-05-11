@@ -71,11 +71,59 @@ function MetricCard({ value, label, delay, loaded }: MetricCardProps) {
 
 export default function Contact() {
   const [loaded, setLoaded] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<"idle" | "success" | "error">("idle");
+  const [submitMessage, setSubmitMessage] = useState("");
 
   useEffect(() => {
     const t = setTimeout(() => setLoaded(true), 200);
     return () => clearTimeout(t);
   }, []);
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    setIsSubmitting(true);
+    setSubmitStatus("idle");
+    setSubmitMessage("");
+
+    const formData = new FormData(e.currentTarget);
+    const data = {
+      lastName: formData.get("lastName") as string,
+      firstName: formData.get("firstName") as string,
+      email: formData.get("email") as string,
+      phone: formData.get("phone") as string,
+      company: formData.get("company") as string,
+      sector: formData.get("sector") as string,
+      message: formData.get("message") as string,
+    };
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
+
+      const result = await response.json();
+
+      if (response.ok) {
+        setSubmitStatus("success");
+        setSubmitMessage("Message envoyé ! Nous vous répondrons rapidement.");
+        // Reset form
+        e.currentTarget.reset();
+      } else {
+        setSubmitStatus("error");
+        setSubmitMessage(result.error || "Une erreur est survenue.");
+      }
+    } catch (error) {
+      console.error("Erreur lors de l'envoi:", error);
+      setSubmitStatus("error");
+      setSubmitMessage("Impossible d'envoyer le formulaire. Réessayez plus tard.");
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
 
   return (
     <div className="bg-white">
@@ -247,7 +295,7 @@ export default function Contact() {
           {/* ── Form (3/5) ── */}
           <form
             className="lg:col-span-3"
-            onSubmit={(e) => e.preventDefault()}
+            onSubmit={handleSubmit}
           >
             <h2 className="font-display text-2xl font-bold text-[#111111] mb-6">
               Décrivez le projet — on vous dit si on match
@@ -285,9 +333,22 @@ export default function Contact() {
               ))}
             </div>
 
-            <ButtonBrand type="submit" className="mt-8">
-              Envoyer le message
+            <ButtonBrand type="submit" className="mt-8" disabled={isSubmitting}>
+              {isSubmitting ? "Envoi en cours..." : "Envoyer le message"}
             </ButtonBrand>
+
+            {/* Message de feedback */}
+            {submitStatus !== "idle" && (
+              <div
+                className={`mt-4 rounded-xl px-4 py-3 text-sm ${
+                  submitStatus === "success"
+                    ? "bg-green-50 text-green-800 border border-green-200"
+                    : "bg-red-50 text-red-800 border border-red-200"
+                }`}
+              >
+                {submitMessage}
+              </div>
+            )}
           </form>
 
           {/* ── Contact info (2/5) ── */}

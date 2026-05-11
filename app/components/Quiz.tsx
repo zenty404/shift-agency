@@ -157,6 +157,9 @@ export default function Quiz() {
   const [step, setStep] = useState(0);
   const [projectType, setProjectType] = useState<string | null>(null);
   const [formulaId, setFormulaId] = useState<string | null>(null);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<"idle" | "success" | "error">("idle");
+  const [submitMessage, setSubmitMessage] = useState("");
   const { ref: sectionRef, visible } = useVisible<HTMLElement>(0.1);
 
   const formulas = projectType ? FORMULAS[projectType] ?? [] : [];
@@ -189,7 +192,61 @@ export default function Quiz() {
     setStep(0);
     setProjectType(null);
     setFormulaId(null);
+    setSubmitStatus("idle");
+    setSubmitMessage("");
     scrollToQuiz();
+  };
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    if (!selectedFormula || !projectType) return;
+
+    setIsSubmitting(true);
+    setSubmitStatus("idle");
+    setSubmitMessage("");
+
+    const formData = new FormData(e.currentTarget);
+    const data = {
+      lastName: formData.get("lastName") as string,
+      firstName: formData.get("firstName") as string,
+      email: formData.get("email") as string,
+      phone: formData.get("phone") as string,
+      company: formData.get("company") as string,
+      city: formData.get("city") as string,
+      details: formData.get("details") as string,
+      projectType: PROJECT_TYPES.find((p) => p.id === projectType)?.label || projectType,
+      formulaLabel: selectedFormula.label,
+      formulaPrice: formatPrice(selectedFormula.priceMin, selectedFormula.priceMax),
+      formulaDelay: selectedFormula.delay,
+      formulaFeatures: selectedFormula.features,
+    };
+
+    try {
+      const response = await fetch("/api/quiz", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
+
+      const result = await response.json();
+
+      if (response.ok) {
+        setSubmitStatus("success");
+        setSubmitMessage("Votre demande a été envoyée ! Nous vous répondrons sous 24h.");
+        // Reset form
+        e.currentTarget.reset();
+      } else {
+        setSubmitStatus("error");
+        setSubmitMessage(result.error || "Une erreur est survenue.");
+      }
+    } catch (error) {
+      console.error("Erreur lors de l'envoi:", error);
+      setSubmitStatus("error");
+      setSubmitMessage("Impossible d'envoyer le formulaire. Réessayez plus tard.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const stepLabels = ["Projet", "Formule", "Résumé"];
@@ -516,7 +573,7 @@ export default function Quiz() {
                           Recevoir mon devis par mail
                         </h4>
                       </div>
-                      <form onSubmit={(e) => e.preventDefault()}>
+                      <form onSubmit={handleSubmit}>
                         <div className="grid gap-4 sm:grid-cols-2">
                           {CONTACT_FIELDS.map((f) => (
                             <div key={f.name} className={f.half ? "" : "sm:col-span-2"}>
@@ -548,9 +605,22 @@ export default function Quiz() {
                             </div>
                           ))}
                         </div>
-                        <ButtonBrand type="submit" className="mt-6">
-                          Recevoir mon devis par mail
+                        <ButtonBrand type="submit" className="mt-6" disabled={isSubmitting}>
+                          {isSubmitting ? "Envoi en cours..." : "Recevoir mon devis par mail"}
                         </ButtonBrand>
+
+                        {/* Message de feedback */}
+                        {submitStatus !== "idle" && (
+                          <div
+                            className={`mt-4 rounded-xl px-4 py-3 text-sm ${
+                              submitStatus === "success"
+                                ? "bg-green-50 text-green-800 border border-green-200"
+                                : "bg-red-50 text-red-800 border border-red-200"
+                            }`}
+                          >
+                            {submitMessage}
+                          </div>
+                        )}
                       </form>
                     </div>
                   </div>

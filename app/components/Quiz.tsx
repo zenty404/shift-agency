@@ -15,9 +15,9 @@ import ButtonBrand from "@/app/components/ButtonBrand";
 
 const PROJECT_TYPES = [
   {
-    id: "landing-page",
-    label: "Landing Page",
-    desc: "Pack OnConversion: Trafic → clients en 7 jours",
+    id: "site-simple",
+    label: "Site simple",
+    desc: "Plus de patient en 7 jours",
     icon: (
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
         <rect x="2" y="3" width="20" height="14" rx="2" />
@@ -26,9 +26,9 @@ const PROJECT_TYPES = [
     ),
   },
   {
-    id: "site-vitrine",
-    label: "Site Vitrine",
-    desc: "Pack OnComplete: Clarté & autorité en 3 secondes",
+    id: "site-complet",
+    label: "Site Complet",
+    desc: "Une crédibilité et un référencement Google superbe",
     icon: (
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
         <circle cx="12" cy="12" r="10" />
@@ -63,7 +63,7 @@ interface Formula {
 }
 
 const FORMULAS: Record<string, Formula[]> = {
-  "landing-page": [
+  "site-simple": [
     {
       id: "pack-onconversion",
       label: "Le Site Simple",
@@ -84,7 +84,7 @@ const FORMULAS: Record<string, Formula[]> = {
         "Plus de patients en toute simplicité.",
     },
   ],
-  "site-vitrine": [
+  "site-complet": [
     {
       id: "pack-oncomplete",
       label: "Le Site Complet",

@@ -8,7 +8,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Nos Services | Sites Web, SaaS & Applications — Shift Agency",
   description:
-    "Développement de landings, sites vitrines et applications sur mesure. Pack OnConversion dès 1 000€, OnComplete 2 000€, OnTime sur devis. Livraison rapide, code propriétaire.",
+    "Développement de landings et sites vitrines sur mesure. Pack OnConversion dès 1 000€, OnComplete 2 000€. Livraison rapide, code propriétaire.",
 
   keywords: [
     "services développement web",
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Nos Services — Sites Web & Applications sur mesure",
     description:
-      "Pack OnConversion dès 1 000€, OnComplete avec SEO local 2 000€, OnTime sur devis. Livraison rapide, stack moderne.",
+      "Pack OnConversion dès 1 000€, OnComplete avec SEO local 2 000€. Livraison rapide, stack moderne.",
     url: "https://Shift Agency/nos-services",
     type: "website",
     locale: "fr_FR",
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Nos Services — Sites Web & Applications",
-    description: "Pack OnConversion 1 000€, OnComplete 2 000€, OnTime sur devis. Stack moderne, livraison rapide.",
+    description: "Pack OnConversion 1 000€, OnComplete 2 000€. Stack moderne, livraison rapide.",
     images: ["/og-image.jpg"],
   },
 
@@ -98,16 +98,16 @@ export default function NosServicesLayout({
           price: "2000",
           priceCurrency: "EUR",
         },
-        {
-          "@type": "Offer",
-          itemOffered: {
-            "@type": "Service",
-            name: "Pack OnTime",
-            description: "Web app, dashboard et automatisations avancées",
-          },
-          price: "8000",
-          priceCurrency: "EUR",
-        },
+        // {
+        //   "@type": "Offer",
+        //   itemOffered: {
+        //     "@type": "Service",
+        //     name: "Pack OnTime",
+        //     description: "Web app, dashboard et automatisations avancées",
+        //   },
+        //   price: "8000",
+        //   priceCurrency: "EUR",
+        // },
       ],
     },
   };

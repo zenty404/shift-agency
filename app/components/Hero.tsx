@@ -74,7 +74,7 @@ export default function Hero() {
 
   return (
     <section
-      className="relative flex flex-col items-center justify-start overflow-hidden px-3 sm:px-6 pt-24 pb-20 sm:pb-24 md:pb-28"
+      className="relative flex flex-col items-center justify-start overflow-hidden px-3 sm:px-6 pt-24 pb-20 min-h-screen"
       aria-label="Accueil — Shift Agency, développement web et digital sur-mesure"
     >
       {/* ── Corporate gradient background ── */}
@@ -172,27 +172,27 @@ export default function Hero() {
         {/* H1 (keep existing text) */}
         <h1 className="font-display leading-[1.08] tracking-[-0.02em]">
           <RevealLine delay={150} loaded={loaded}>
-            <span className="text-[clamp(2.2rem,8vw,7rem)] font-bold text-[#0F172A]">
-              Votre projet digital.
+            <span className="text-[clamp(2rem,8vw,5rem)] font-bold text-[#0F172A]">
+            Des patients en continu sans effort
             </span>
           </RevealLine>
           <RevealLine delay={250} loaded={loaded}>
-            <span className="text-[clamp(2.2rem,8vw,7rem)] font-bold text-[#0F172A]">
-              Qui réussit pour de vrai.
+            <span className="text-[clamp(2rem,8vw,5rem)] font-bold text-[#0F172A]">
+              Grâce à un site livré en 7 jours
             </span>
           </RevealLine>
         </h1>
 
         {/* Subtitle */}
         <p
-          className="mt-6 max-w-[640px] px-2 text-base leading-[1.65] text-[#334155] sm:mt-8 sm:px-0 sm:text-lg md:mt-9 md:text-xl font-medium"
+          className="mt-6 max-w-[640px] px-2 text-base leading-[1.65] text-[#334155] sm:mt-8 sm:px-0 sm:text-lg md:mt-9 font-medium"
           style={{
             opacity: loaded ? 1 : 0,
             transform: loaded ? "translateY(0)" : "translateY(20px)",
             transition: "opacity 800ms cubic-bezier(0.22, 1, 0.36, 1) 600ms, transform 800ms cubic-bezier(0.22, 1, 0.36, 1) 600ms",
           }}
         >
-          Nous concevons des landing, sites web et application sur-mesure qui vous aident à atteindre vos objectifs.
+          Nous concevons des sites qui vous ramènent de nouveaux patients, le tout sans jargon technique.
         </p>
 
         {/* Dual CTAs */}
@@ -205,7 +205,7 @@ export default function Hero() {
           }}
         >
           <ButtonBrand href="/contact" aria-label="Lancer mon projet — page contact">
-            Lancer mon projet
+            Obtenir plus de patients
           </ButtonBrand>
           <Link
             href="/our-projects"

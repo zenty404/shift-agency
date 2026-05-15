@@ -383,10 +383,10 @@ export default function Testimonials() {
 
       {/* ── Testimonials header ── */}
       <div className="mx-auto max-w-[1280px] px-6 lg:px-10">
-        <div className="mb-16 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+          <div className="mb-16 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
           <div>
             <p className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-gray-text">
-              Social proof
+              Témoignages
             </p>
             <h2 className="font-display text-3xl font-bold tracking-[-0.02em] text-[#111111] sm:text-4xl">
               Ce qu&apos;en disent nos clients.

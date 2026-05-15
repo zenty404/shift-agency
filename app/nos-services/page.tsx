@@ -15,63 +15,43 @@ import { CALENDLY_URL } from "@/lib/calendly";
 const OFFERS = [
   {
     num: "01",
-    title: "Pack OnConversion",
+    title: "Le Site Simple",
     headline:
-      "Landing page haute conversion. Votre trafic devient des demandes qualifiées en ~7 jours.",
+      "Une page claire pour présenter votre cabinet. Vos futurs patients prennent rendez-vous facilement.",
     blocage:
-      "Vous envoyez encore vos prospects sur une bio Instagram ou un PDF : zéro preuve sociale, zéro clarté, zéro conversion.",
+      "Aujourd'hui, vos patients ont du mal à comprendre votre pratique, ou vous êtes perdu au milieu des autres sans pouvoir vous démarquer.",
     solution:
-      "Une landing qui convertit et est compréhensible en moins de 3 secondes. Satisfait ou remboursé 14 jours.",
+      "Un site apaisant et très facile à lire. En quelques secondes, les visiteurs se sentent en confiance et ont envie de vous contacter.",
     results: [
-      "Live en ~7 jours",
-      "Plus de leads qualifiés",
-      "Crédibilité immédiate ",
-      "Rapide, SEO-ready, évolutif",
+      "Prêt en 7 jours",
+      "Plus de prises de rendez-vous",
+      "Une belle image professionnelle",
+      "Très facile à lire sur téléphone",
     ],
-    process: ["Brief", "Design", "Développement", "Livraison"],
+    process: ["Discussion", "Design", "Création", "Mise en ligne"],
     delay: "7 jours",
     price: "1 000 € HT",
-    cta: "Je veux ma landing",
+    cta: "Je veux ce site",
   },
   {
     num: "02",
-    title: "Pack OnComplete",
+    title: "Le Site Complet",
     headline:
-      "Site vitrine complet. Vos prospects comprennent, vous crédibilisent, puis vous contactent.",
+      "Un site avec plusieurs pages pour tout expliquer. Parfait pour être trouvé facilement sur Google.",
     blocage:
-      "On vous trouve mal sur Google, ou votre site actuel ne raconte pas assez vite ce que vous vendez, vous perdez des leads au silence.",
+      "On ne vous trouve pas quand on cherche un spécialiste dans votre ville. Le bouche-à-oreille marche bien, mais ce n'est plus suffisant.",
     solution:
-      "Un site qui assure une autorité digne des plus grands. Vos prospects comprennent qui vous êtes et ont envie de travailler avec vous.",
+      "Un site qui rassure, qui explique bien toutes vos méthodes, et surtout, qui est fait pour que Google vous mette en avant dans votre région.",
     results: [
-      "Visibilité locale et pages qui respirent le pro",
-      "Parcours clair : comprendre → croire → booker",
-      "Des leads qui vous contactent",
-      "Rapide, SEO-ready, évolutif",
+      "Mieux placé sur Google",
+      "Vos patients comprennent bien votre pratique",
+      "Votre agenda se remplit",
+      "Prêt en 14 jours",
     ],
-    process: ["Cadrage", "Design", "SEO", "Livraison"],
+    process: ["Organisation", "Design", "Référencement", "Mise en ligne"],
     delay: "14 jours",
     price: "2 000 € HT",
-    cta: "Je veux être crédible",
-  },
-  {
-    num: "03",
-    title: "Pack OnTime",
-    headline:
-      "Web app & automatisation. Un outil sur-mesure pour gagner du temps et scaler proprement.",
-    blocage:
-      "Vous perdez des heures chaque semaine sur des tâches manuelles, ou votre produit a besoin d’un vrai back-office pas d’un template générique.",
-    solution:
-      "Une application sur-mesure qui fera gagner au moins +15 h/semaine à vos équipes.",
-    results: [
-      "Outil aligné sur votre workflow réel",
-      "Évolutif : on itère tant que l'objectif n'est pas atteint",
-      "Rapide, évolutif et performant",
-      "Repo + infra remis entre vos mains",
-    ],
-    process: ["Audit", "Architecture", "Développement", "Déploiement"],
-    delay: "Sur devis",
-    price: "Dès 8 000 € HT",
-    cta: "Récupérer vos 15h",
+    cta: "Je veux être visible",
   },
 ];
 
@@ -324,27 +304,27 @@ export default function NosServices() {
           {/* H1 */}
           <h1 className="font-display leading-[1.08] tracking-[-0.02em]">
             <RevealLine delay={150} loaded={loaded}>
-              <span className="text-[clamp(2.2rem,8vw,7rem)] font-bold text-[#0F172A]">
-                Trois packs.
+              <span className="text-[clamp(2.2rem,8vw,5rem)] font-bold text-[#0F172A]">
+                Deux offres simples.
               </span>
             </RevealLine>
             <RevealLine delay={250} loaded={loaded}>
-              <span className="text-[clamp(2.2rem,8vw,7rem)] font-bold text-[#0F172A]">
-                Qui réussissent pour de vrai.
+              <span className="text-[clamp(2.2rem,8vw,5rem)] font-bold text-[#0F172A]">
+                Pour remplir votre agenda.
               </span>
             </RevealLine>
           </h1>
 
           {/* Subtitle */}
           <p
-            className="mt-6 max-w-[640px] px-2 text-base leading-[1.65] text-[#334155] sm:mt-8 sm:px-0 sm:text-lg md:mt-9 md:text-xl font-medium"
+            className="mt-6 max-w-[640px] px-2 text-base leading-[1.65] text-[#334155] sm:mt-8 sm:px-0 sm:text-lg md:mt-9 font-medium"
             style={{
               opacity: loaded ? 1 : 0,
               transform: loaded ? "translateY(0)" : "translateY(20px)",
               transition: "all 800ms cubic-bezier(0.22, 1, 0.36, 1) 600ms",
             }}
           >
-            Pack OnConversion, Pack OnComplete, Pack OnTime. Une réponse rapide, des projets qui avance et des clients satisfait. Si le projet n&apos;est pas mûr, on vous le dit.
+            Des sites créés pour vous aider à avoir plus de patients, sans jargon technique. On s&apos;occupe de tout pour que vous puissiez vous concentrer sur vos consultations.
           </p>
 
           {/* Dual CTAs */}

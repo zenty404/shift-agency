@@ -17,29 +17,29 @@ import ButtonBrand from "@/app/components/ButtonBrand";
 
 const STEPS = [
   {
-    title: "Pack OnConversion (Landing Page)",
+    title: "Le site simple",
     description:
-      "On transforme votre trafic en client en 7 jours. Vous obtiendrez une landing qui fera signer vos futurs clients.",
-    features: ["Livraison 7 jours", "Haute conversion", "Satisfait ou remboursé 14j"],
+      "Une belle page internet livrée en 7 jours pour présenter votre cabinet. Parfait pour les praticiens qui veulent être facilement trouvables et rassurer leurs futurs patients.",
+    features: ["Livraison 7 jours", "Plus de patients", "Satisfait ou remboursé 14j"],
     image: "/clement.png",
     naturalScale: false,
   },
   {
-    title: "Pack OnComplete (Site Vitrine)",
+    title: "Le site complet",
     description:
-      "Vos futurs clients comprendront en 3 secondes ce que vous faites. Établissez une autorité immédiate. Un design si pro que la confiance est acquise avant même le premier appel.",
-    features: ["Un site complet", "Livraison en 2 semaines", "Satisfait ou remboursé 14j"],
+      "Vos futurs patients comprendront en 3 secondes comment vous pouvez les aider. Vous obtiendrez un site complet qui met en valeur vos compétences et vous aide à être bien placé sur Google.",
+    features: ["Confiance instantanée", "Plus de patients", "Livraison en 2 semaines", "Satisfait ou remboursé 14j"],
     image: "/artisan.png",
     naturalScale: true,
   },
-  {
-    title: "Pack OnTime (Web App & Automatisation)",
-    description:
-      "Gagner +15 h/semaine pour vos équipes avec un outil sur-mesure livré en ~30 jours. L'outil sera tellement bien que vos équipes ne voudront pas le lâcher.",
-    features: ["Livraison ~30 jours", "Gagner +15 h/semaine", "Itérations gratuites"],
-    image: "/saas.png",
-    naturalScale: false,
-  },
+  // {
+  //   title: "Pack OnTime (Web App & Automatisation)",
+  //   description:
+  //     "Gagner +15 h/semaine pour vos équipes avec un outil sur-mesure livré en ~30 jours. L'outil sera tellement bien que vos équipes ne voudront pas le lâcher.",
+  //   features: ["Livraison ~30 jours", "Gagner +15 h/semaine", "Itérations gratuites"],
+  //   image: "/saas.png",
+  //   naturalScale: false,
+  // },
 ];
 
 const N = STEPS.length;

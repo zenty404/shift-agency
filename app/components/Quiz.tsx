@@ -36,17 +36,17 @@ const PROJECT_TYPES = [
       </svg>
     ),
   },
-  {
-    id: "projet-custom",
-    label: "Web App & Automatisation",
-    desc: "Pack OnTime: +15 h / semaine pour vos équipes",
-    icon: (
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83" />
-        <circle cx="12" cy="12" r="3" />
-      </svg>
-    ),
-  },
+  // {
+  //   id: "projet-custom",
+  //   label: "Web App & Automatisation",
+  //   desc: "Pack OnTime: +15 h / semaine pour vos équipes",
+  //   icon: (
+  //     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+  //       <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83" />
+  //       <circle cx="12" cy="12" r="3" />
+  //     </svg>
+  //   ),
+  // },
 ];
 
 interface Formula {
@@ -66,49 +66,45 @@ const FORMULAS: Record<string, Formula[]> = {
   "landing-page": [
     {
       id: "pack-onconversion",
-      label: "Pack OnConversion (Landing Page)",
+      label: "Le Site Simple",
       tagline:
-        "On transforme votre trafic en client en 7 jours. Vous obtiendrez une landing qui fera signer vos futurs clients.",
+        "On vous fait obtenir des patients en continu, avec un site prêt en 7 jours.",
       priceMin: "1 000",
       priceMax: null,
       delay: "7 jours",
       features: [
-        "Landing unique pensée pour la conversion + design premium secteur",
-        "Développement Next.js & Tailwind — chargement instantané",
-        "Copywriting orienté psychologie de vente",
-        "SEO technique & balisage sémantique",
-        "Hébergement + domaine 1ère année inclus",
-        "Propriété du site (pas d'abonnement)",
-        "Satisfait ou remboursé 14 jours après mise en ligne",
+        "Une belle page qui rassure vos futurs patients",
+        "Des mots clairs qui encouragent à prendre rendez-vous",
+        "Vous êtes bien référencé sur Google",
+        "Le site vous appartient (aucun abonnement)",
+        "Satisfait ou remboursé 7 jours après la mise en ligne",
       ],
-      objective: "Convertir le trafic (ads, réseaux) en demandes qualifiées.",
+      objective: "Que vous soyez facilement trouvable sur internet.",
       result:
-        "Taux de conversion et crédibilité renforcés, performance type PageSpeed visée vers 90/100.",
+        "Plus de patients en toute simplicité.",
     },
   ],
   "site-vitrine": [
     {
       id: "pack-oncomplete",
-      label: "Pack OnComplete (Site Vitrine)",
+      label: "Le Site Complet",
       tagline:
-        "Vos futurs clients comprendront en 3 secondes ce que vous faites. Établissez une autorité immédiate. Un design si pro que la confiance est acquise avant même le premier appel.",
+        "Vos futurs patients comprendront en quelques secondes comment vous pouvez les aider.",
       priceMin: "2 000",
       priceMax: null,
       delay: "2 semaines",
       features: [
-        "Architecture jusqu'à 8 pages (Accueil, Services, À propos, Contact…)",
-        "Module blog optimisé SEO",
-        "Design sur-mesure (méthodologie OKLCH)",
-        "Formulaires intelligents + connexion CRM / email",
-        "Hébergement premium + domaine 1ère année inclus",
-        "Propriété du site (pas d'abonnement)",
-        "Satisfait ou remboursé 14 jours après livraison finale",
+        "Jusqu'à 8 pages (Accueil, Services, À propos, Contact…)",
+        "Un blog pour être encore mieux vu par Google",
+        "Une présentation adaptée à vos goûts",
+        "Le site vous appartient (aucun abonnement)",
+        "Satisfait ou remboursé 14 jours après la livraison finale",
       ],
-      objective: "Présenter toute votre activité avec une image premium et un SEO durable.",
-      result: "Site complet qui renforce la confiance et votre référencement sur le long terme.",
+      objective: "Présenter tout votre cabinet avec une image professionnelle.",
+      result: "Un site complet qui donne confiance et apporte de nouveaux patients.",
     },
   ],
-  "projet-custom": [
+ /* "projet-custom": [
     {
       id: "pack-ontime",
       label: "Pack OnTime (Web App & Automatisation)",
@@ -129,7 +125,7 @@ const FORMULAS: Record<string, Formula[]> = {
       objective: "Éliminer les tâches répétitives et centraliser les données pour décider plus vite.",
       result: "Gain de temps massif, moins d'erreurs, outil aligné sur votre façon de travailler.",
     },
-  ],
+  ],*/
 };
 
 /* ── Helpers ── */
@@ -339,9 +335,7 @@ export default function Quiz() {
                 <button
                   key={p.id}
                   onClick={() => handleProjectSelect(p.id)}
-                  className={`group flex items-start gap-4 rounded-2xl border-[1.5px] p-6 text-left transition-all duration-250 cursor-pointer ${
-                    i === PROJECT_TYPES.length - 1 ? "sm:col-span-2 sm:max-w-[calc(50%-8px)] sm:mx-auto sm:w-full" : ""
-                  } ${
+                  className={`group flex items-center gap-3 rounded-2xl border-[1.5px] p-4 sm:p-5 text-left transition-all duration-250 cursor-pointer ${
                     projectType === p.id
                       ? "border-blue bg-blue-light shadow-[0_8px_24px_-6px_rgba(6,39,131,0.2)]"
                       : "border-gray-border/40 bg-white hover:border-blue/40 hover:bg-blue-light/30 hover:-translate-y-0.5 hover:shadow-[0_12px_28px_-8px_rgba(6,39,131,0.12)]"
@@ -358,12 +352,12 @@ export default function Quiz() {
                   }`}>
                     {p.icon}
                   </div>
-                  <div className="flex-1 min-w-0">
-                    <span className="font-display text-base font-semibold text-[#111111] block">{p.label}</span>
-                    <span className="text-sm text-gray-text mt-0.5 block">{p.desc}</span>
-                  </div>
+                  <p className="flex-1 min-w-0 truncate text-sm sm:text-base">
+                    <span className="font-display font-semibold text-[#111111]">{p.label}</span>
+                    <span className="text-gray-text"> · {p.desc}</span>
+                  </p>
                   {/* Arrow */}
-                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" className="mt-1 shrink-0 text-gray-text/30 transition-all duration-250 group-hover:text-blue group-hover:translate-x-0.5">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" className="shrink-0 text-gray-text/30 transition-all duration-250 group-hover:text-blue group-hover:translate-x-0.5">
                     <path d="M6 4l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
                 </button>

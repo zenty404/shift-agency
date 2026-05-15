@@ -13,10 +13,10 @@ import { WHATSAPP_DISPLAY, WHATSAPP_URL } from "@/lib/whatsapp";
 const FIELDS = [
   { name: "lastName", label: "Nom", type: "text", half: true },
   { name: "firstName", label: "Prénom", type: "text", half: true },
-  { name: "email", label: "Email pro", type: "email", half: true },
-  { name: "company", label: "Entreprise", type: "text", half: true },
+  { name: "email", label: "Email", type: "email", half: true },
+  { name: "company", label: "Nom du cabinet (facultatif)", type: "text", half: true },
   { name: "phone", label: "Téléphone", type: "tel", half: true },
-  { name: "sector", label: "Secteur", type: "text", half: true },
+  { name: "sector", label: "Spécialité", type: "text", half: true },
   { name: "message", label: "Message", type: "textarea", half: false },
 ];
 
@@ -214,27 +214,27 @@ export default function Contact() {
           {/* H1 */}
           <h1 className="font-display leading-[1.08] tracking-[-0.02em]">
             <RevealLine delay={150} loaded={loaded}>
-              <span className="text-[clamp(2.2rem,8vw,7rem)] font-bold text-[#0F172A]">
-                Parlons de votre projet.
+              <span className="text-[clamp(2.2rem,8vw,5rem)] font-bold text-[#0F172A]">
+                On est là pour vous.
               </span>
             </RevealLine>
             <RevealLine delay={250} loaded={loaded}>
-              <span className="text-[clamp(2.2rem,8vw,7rem)] font-bold text-[#0F172A]">
-                On répond vite.
+              <span className="text-[clamp(2.2rem,8vw,5rem)] font-bold text-[#0F172A]">
+                Discutons de votre cabinet.
               </span>
             </RevealLine>
           </h1>
 
           {/* Subtitle */}
           <p
-            className="mt-6 max-w-[640px] px-2 text-base leading-[1.65] text-[#334155] sm:mt-8 sm:px-0 sm:text-lg md:mt-9 md:text-xl font-medium"
+            className="mt-6 max-w-[640px] px-2 text-base leading-[1.65] text-[#334155] sm:mt-8 sm:px-0 sm:text-lg md:mt-9 font-medium"
             style={{
               opacity: loaded ? 1 : 0,
               transform: loaded ? "translateY(0)" : "translateY(20px)",
               transition: "all 800ms cubic-bezier(0.22, 1, 0.36, 1) 600ms",
             }}
           >
-           Votre projet est livré rapidement et avec la qualité que vous méritez.
+           Remplissez ce petit formulaire et on vous répond très vite. On peut aussi se parler directement par WhatsApp si vous préférez, c&apos;est très simple.
           </p>
 
           {/* Dual CTAs */}
@@ -280,10 +280,10 @@ export default function Contact() {
           <div
             className="mt-12 grid grid-cols-2 gap-4 sm:mt-14 sm:gap-5 md:mt-16 md:grid-cols-4 md:gap-6 w-full max-w-4xl"
           >
-            <MetricCard value="2h" label="Réponse WhatsApp" delay={900} loaded={loaded} />
-            <MetricCard value="24h" label="Devis gratuit" delay={1000} loaded={loaded} />
+            <MetricCard value="Rapide" label="Réponse WhatsApp" delay={900} loaded={loaded} />
+            <MetricCard value="24h" label="Échange gratuit" delay={1000} loaded={loaded} />
             <MetricCard value="5★" label="Avis Google" delay={1100} loaded={loaded} />
-            <MetricCard value="0€" label="Premier échange" delay={1200} loaded={loaded} />
+            <MetricCard value="100%" label="Sans engagement" delay={1200} loaded={loaded} />
           </div>
 
         </div>
@@ -298,7 +298,7 @@ export default function Contact() {
             onSubmit={handleSubmit}
           >
             <h2 className="font-display text-2xl font-bold text-[#111111] mb-6">
-              Décrivez le projet — on vous dit si on match
+              Parlez-nous de vous et de ce dont vous avez besoin
             </h2>
             <div className="grid gap-5 sm:grid-cols-2">
               {FIELDS.map((f) => (
@@ -333,8 +333,13 @@ export default function Contact() {
               ))}
             </div>
 
+<<<<<<< HEAD
             <ButtonBrand type="submit" className="mt-8" disabled={isSubmitting}>
               {isSubmitting ? "Envoi en cours..." : "Envoyer le message"}
+=======
+            <ButtonBrand type="submit" className="mt-8">
+              Envoyer mon message
+>>>>>>> 0a297ad (copywriting patient)
             </ButtonBrand>
 
             {/* Message de feedback */}
@@ -356,7 +361,7 @@ export default function Contact() {
             {/* WhatsApp */}
             <div>
               <div className="text-[10px] font-semibold uppercase tracking-wider text-gray-text/60 mb-2">
-                WhatsApp (réponse ~2h)
+                WhatsApp (on répond vite)
               </div>
               <a
                 href={WHATSAPP_URL}
@@ -395,9 +400,9 @@ export default function Contact() {
             <div className="rounded-xl border border-gray-border/40 bg-white p-5">
               <ul className="space-y-2">
                 {[
-                  "Réponse WhatsApp en ~2 h",
+                  "On vous répond doucement, sans vous presser",
                   "Devis gratuit, sans engagement",
-                  "Pas d’abonnement — vous êtes propriétaire",
+                  "Pas d'abonnement — le site vous appartient",
                 ].map(
                   (item) => (
                     <li key={item} className="flex items-center gap-2">

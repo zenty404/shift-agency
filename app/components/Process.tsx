@@ -18,23 +18,18 @@ if (typeof window !== "undefined") {
 const STEPS = [
   {
     num: "01",
-    title: "Brief rapide",
-    desc: "On échange par WhatsApp ou appel pour comprendre votre activité, vos besoins et vos objectifs.",
+    title: "Échange très simple",
+    desc: "On prend 15 minutes au téléphone, pour comprendre comment vous aidez vos patients.",
   },
   {
     num: "02",
-    title: "Conception",
-    desc: "On crée une maquette de votre projet que vous acceptez ou non. Vous êtes sûr que le résultat vous plaît.",
+    title: "Création",
+    desc: "On crée un site à votre image, qui met en valeur votre pratique dans un esprit bienveillant.",
   },
   {
     num: "03",
-    title: "Développement",
-    desc: "On développe votre projet en suivant les meilleures pratiques et vos objectifs précédemment définis. Aucune mauvaise surprise.",
-  },
-  {
-    num: "04",
-    title: "Livraison",
-    desc: "On met votre projet en ligne, on vous explique comment l'utiliser. Vous êtes autonome et propriétaire du projet.",
+    title: "Mise en ligne",
+    desc: "On s'occupe de tout. Le site vous appartient et vous pouvez vous concentrer sur vos patients.",
   },
 ];
 
@@ -478,10 +473,10 @@ export default function Process() {
             Notre Processus
           </p>
           <h2 className="mb-6 font-display text-5xl sm:text-6xl lg:text-7xl font-bold leading-tight text-[#111111]">
-            Un processus clair, en 4 étapes
+            3 étapes claires
           </h2>
           <p className="text-lg lg:text-xl text-gray-text leading-relaxed max-w-2xl mx-auto">
-            On avance étape par étape : vous savez ce qu'on fait, pourquoi on le fait, et ce qui vient ensuite.
+            On avance main dans la main : c'est très facile et vous savez toujours ce qu'il se passe.
           </p>
         </div>
 

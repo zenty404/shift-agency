@@ -13,10 +13,10 @@ import { WHATSAPP_URL } from "@/lib/whatsapp";
    ═══════════════════════════════════════════════════════════ */
 
 const STATS = [
-  { value: "100+", label: "Projets livrés — landings, vitrines, apps" },
-  { value: "5/5", label: "Note Google · avis clients" },
-  { value: "7j", label: "Délai type Pack OnConversion" },
-  { value: "1 000€", label: "Point d’entrée transparent" },
+  { value: "100+", label: "Cabinets et praticiens accompagnés" },
+  { value: "5/5", label: "Note laissée par nos clients sur Google" },
+  { value: "7j", label: "Temps moyen pour avoir votre site" },
+  { value: "1 000€", label: "Des prix clairs sans mauvaise surprise" },
 ];
 
 /* ── Staggered line reveal for H1 ── */
@@ -168,28 +168,27 @@ export default function OurProjects() {
           {/* H1 */}
           <h1 className="font-display leading-[1.08] tracking-[-0.02em]">
             <RevealLine delay={150} loaded={loaded}>
-              <span className="text-[clamp(2.2rem,8vw,7rem)] font-bold text-[#0F172A]">
-              Nos derniers projets.
+              <span className="text-[clamp(2.2rem,8vw,5rem)] font-bold text-[#0F172A]">
+              Ils nous font confiance.
               </span>
             </RevealLine>
             <RevealLine delay={250} loaded={loaded}>
-              <span className="text-[clamp(2.2rem,8vw,7rem)] font-bold text-[#0F172A]">
-              Pensés pour la performance.
+              <span className="text-[clamp(2.2rem,8vw,5rem)] font-bold text-[#0F172A]">
+              Découvrez nos sites.
               </span>
             </RevealLine>
           </h1>
 
           {/* Subtitle */}
           <p
-            className="mt-6 max-w-[640px] px-2 text-base leading-[1.65] text-[#334155] sm:mt-8 sm:px-0 sm:text-lg md:mt-9 md:text-xl font-medium"
+            className="mt-6 max-w-[640px] px-2 text-base leading-[1.65] text-[#334155] sm:mt-8 sm:px-0 sm:text-lg md:mt-9 font-medium"
             style={{
               opacity: loaded ? 1 : 0,
               transform: loaded ? "translateY(0)" : "translateY(20px)",
               transition: "all 800ms cubic-bezier(0.22, 1, 0.36, 1) 600ms",
             }}
           >
-            Découvrez nos réalisations récentes : des interfaces soignées,
-            orientées résultats et conçues pour durer.
+            Des sites jolis, simples, et qui aident chaque jour de nombreux praticiens à recevoir plus de patients dans leurs cabinets.
           </p>
 
           {/* Dual CTAs */}
@@ -278,11 +277,10 @@ export default function OurProjects() {
               </span>
             </div>
             <h2 className="font-display text-3xl font-bold text-[#0F172A] sm:text-5xl mb-4">
-              Nos réalisations au quotidien
+              Ce que nous faisons pour vous
             </h2>
             <p className="text-gray-text text-lg max-w-2xl mx-auto">
-              Chaque réalisation est pensée
-              pour convertir, rassurer ou automatiser.
+              Chaque site est pensé pour rassurer vos futurs patients et simplifier la prise de rendez-vous. Tout est très facile.
             </p>
           </div>
 

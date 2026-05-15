@@ -12,48 +12,48 @@ import { WHATSAPP_URL } from "@/lib/whatsapp";
    ═══════════════════════════════════════════════════════════ */
 
 const EXPERTISES = [
-  "Landings haute conversion",
-  "Sites vitrine complets qui posent votre autorité",
-  "Web apps, dashboards et automatisations",
-  "Des sites pensés pour vous apporter des clients, pas juste beau",
-  "Un design pro et un copy qui fait booker",
-  "UX/UI orientée objectifs business, pas vanity metrics",
+  "Des sites très clairs pour présenter votre cabinet",
+  "Vous aider à être trouvé facilement sur Google",
+  "Des mots justes et bienveillants pour expliquer votre pratique",
+  "Un design apaisant qui donne confiance",
+  "Des pages faites pour encourager la prise de rendez-vous",
+  "On s'occupe de toute la technique pour vous",
 ];
 
 const ADN = [
   {
-    title: "Livraison rapide",
-    desc: "On livre : landing en ~7 jours, vitrine en ~2 semaines, outil sur-mesure en ~30 jours.",
+    title: "Création rapide",
+    desc: "Votre site simple est prêt en 7 jours, votre site complet en 14 jours.",
   },
   {
-    title: "Prix transparent",
-    desc: "1 000 €, 2 000 €, sur-mesure dès 8 000 €. Pas de frais cachés.",
+    title: "Prix clairs",
+    desc: "1 000 € ou 2 000 €. Pas de mauvaise surprise ni de frais cachés.",
   },
   {
     title: "Sans abonnement",
-    desc: "Vous payez une fois, le site est à vous.",
+    desc: "Vous payez une seule fois, le site est à vous pour de bon.",
   },
   {
-    title: "Contact direct",
-    desc: "WhatsApp, email, pas de formulaire sans fin.",
+    title: "On se parle",
+    desc: "On discute par WhatsApp ou téléphone, c'est simple et direct.",
   },
 ];
 
 const PROMESSE = [
   {
     num: "01",
-    title: "Efficace",
-    desc: "Il sert un objectif concret, mesurable.",
+    title: "Utile",
+    desc: "Votre site a un but précis : vous amener de nouveaux patients.",
   },
   {
     num: "02",
-    title: "Évolutif",
-    desc: "Il s'adapte à votre croissance.",
+    title: "Clair",
+    desc: "Très facile à comprendre pour toutes les personnes qui vous visitent.",
   },
   {
     num: "03",
-    title: "Distinctif",
-    desc: "Il reflète votre identité et vous différencie sur votre marché.",
+    title: "Rassurant",
+    desc: "Une belle image, bienveillante, qui donne envie de vous faire confiance.",
   },
 ];
 
@@ -229,15 +229,15 @@ export default function About() {
           {/* H1 */}
           <h1 className="font-display leading-[1.08] tracking-[-0.02em]">
             <RevealLine delay={150} loaded={loaded}>
-              <span className="text-[clamp(2.2rem,8vw,7rem)] font-bold text-[#0F172A]">
-                À propos d&apos;Shift Agency
+              <span className="text-[clamp(2.2rem,8vw,5rem)] font-bold text-[#0F172A]">
+                Qui sommes-nous ?
               </span>
             </RevealLine>
           </h1>
 
           {/* Subtitle */}
           <p
-            className="mt-6 max-w-[640px] px-2 text-base leading-[1.65] text-[#334155] sm:mt-8 sm:px-0 sm:text-lg md:mt-9 md:text-xl font-medium"
+            className="mt-6 max-w-[640px] px-2 text-base leading-[1.65] text-[#334155] sm:mt-8 sm:px-0 sm:text-lg md:mt-9 font-medium"
             style={{
               opacity: loaded ? 1 : 0,
               transform: loaded ? "translateY(0)" : "translateY(20px)",
@@ -245,7 +245,7 @@ export default function About() {
             }}
           >
            
-           Nous concevons des landing, sites web et application sur-mesure qui vous aident à atteindre vos objectifs. En bref des projets qui servent votre business.
+           Nous aidons les praticiens à développer leur cabinet avec des sites internet simples et rassurants. Sans jargon technique, avec beaucoup de bienveillance.
           </p>
 
           {/* Dual CTAs */}
@@ -308,20 +308,18 @@ export default function About() {
               Notre histoire
             </span>
             <h2 className="mt-3 font-display text-2xl font-bold text-[#111111] sm:text-3xl tracking-[-0.02em]">
-              Pas une agence qui « verrouille » votre site.
+              Des mots simples pour vous aider à aider.
             </h2>
           </div>
           <div className="space-y-4 text-base text-gray-text leading-relaxed">
             <p>
-              On a créé Shift Agency pour une chose : que votre projet digital réussisse
-              pour de vrai. Votre objectif business, on l'atteint, votre site doit servir votre business, pas l'inverse.
+              Nous avons créé cette agence avec une idée en tête : rendre internet facile pour les praticiens. Vous n'avez pas besoin de comprendre l'informatique pour avoir des patients.
             </p>
             <p>
-              Des sites qui vendent enfin, fini les sites juste beaux. On vous livre un site beau et pensé pour convertir.
+              C'est terminé les sites compliqués et les termes techniques incompréhensibles. Nous vous faisons un site très doux, apaisant, qui donne confiance à vos futurs patients.
             </p>
             <p>
-              On vous rend visible, crédible, attractif sans vous enfermer
-              dans un abonnement. 
+              On vous aide à être bien visible, et on ne vous demande jamais de payer un abonnement tous les mois. Une fois le site fait, il est à vous.
             </p>
           </div>
         </div>
@@ -332,14 +330,11 @@ export default function About() {
         <div className="mx-auto max-w-[1100px] grid gap-12 lg:grid-cols-2 lg:items-center">
           <div className="order-2 lg:order-1 space-y-4 text-base text-gray-text leading-relaxed">
             <p>
-              Un modèle simple : prix annoncé, délais tenus, transfert total à la livraison
-              (comptes, repo, hébergement). Pas de « surprise » à trois mois, pas de licence
-              cachée.
+              Notre façon de faire est très simple : on vous donne un prix clair, on va vite, et on vous aide. Pas de mauvaise surprise, pas de frais cachés.
             </p>
             <p>
-              OnConversion dès 1 000 € · OnComplete dès 2 000 € · OnTime sur devis.
-              On parle WhatsApp en ~2 h, on cadre en call court, et on démarre le projet.
-              Satisfait ou remboursé 14 jours sur les packs éligibles.
+              Nos sites démarrent à 1 000 €. On discute ensemble par WhatsApp ou au téléphone, on comprend ce que vous faites, et on commence.
+              C'est sans stress et très bienveillant.
             </p>
           </div>
           <div className="order-1 lg:order-2">
@@ -347,10 +342,10 @@ export default function About() {
               Notre modèle
             </span>
             <h2 className="mt-3 font-display text-2xl font-bold text-[#111111] sm:text-3xl tracking-[-0.02em]">
-              Simple, rapide, transparent.
+              Simple, humain, transparent.
             </h2>
             <div className="mt-6 flex gap-4">
-              {["7 jours", "Prix fixe", "Pas d'abonnement"].map((tag) => (
+              {["7 jours", "Prix clair", "Pas d'abonnement"].map((tag) => (
                 <span
                   key={tag}
                   className="rounded-full bg-blue/10 px-3 py-1 text-[11px] font-medium text-blue"
@@ -371,7 +366,7 @@ export default function About() {
               Notre promesse
             </span>
             <h2 className="mt-3 font-display text-2xl font-bold text-[#111111] sm:text-3xl tracking-[-0.02em]">
-              Un projet digital doit être :
+              Votre site internet doit être :
             </h2>
           </div>
 
@@ -454,13 +449,13 @@ export default function About() {
             Notre vision
           </span>
           <h2 className="mt-3 font-display text-2xl font-bold text-[#111111] sm:text-3xl tracking-[-0.02em]">
-            Un digital premium, sans jargon ni cage.
+            De la bienveillance pour votre cabinet.
           </h2>
           <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:justify-center sm:gap-6">
             {[
-              "On vous rend tous vos projets dans des délais rapides.",
-              "Pas d'abonnement qui vous ruine à la longue, juste un projet qui vous sert vraiment.",
-              "Être crédible, professionnel et générer des contacts.",
+              "On travaille pour vous rapidement pour que vous ayez vite des patients.",
+              "Aucun abonnement qui vous coûte cher tous les mois. C'est clair et honnête.",
+              "Un site qui inspire la confiance et qui encourage à prendre rendez-vous.",
             ].map((v) => (
               <div
                 key={v}

@@ -283,29 +283,29 @@ export default function RessourcesLinkedin() {
           {/* H1 */}
           <h1 className="font-display leading-[1.08] tracking-[-0.02em]">
             <RevealLine delay={150} loaded={loaded}>
-              <span className="text-[clamp(2.2rem,8vw,7rem)] font-bold text-[#0F172A]">
-                L&apos;expertise Shift Agency
+              <span className="text-[clamp(2.2rem,8vw,5rem)] font-bold text-[#0F172A]">
+                Nos conseils gratuits.
               </span>
             </RevealLine>
             <RevealLine delay={250} loaded={loaded}>
-              <span className="text-[clamp(2.2rem,8vw,7rem)] font-bold text-[#0F172A]">
-                au quotidien
+              <span className="text-[clamp(2.2rem,8vw,5rem)] font-bold text-[#0F172A]">
+                Pour vous aider au quotidien.
               </span>
             </RevealLine>
           </h1>
 
           {/* Subtitle */}
           <p
-            className="mt-6 max-w-[640px] px-2 text-base leading-[1.65] text-[#334155] sm:mt-8 sm:px-0 sm:text-lg md:mt-9 md:text-xl font-medium"
+            className="mt-6 max-w-[640px] px-2 text-base leading-[1.65] text-[#334155] sm:mt-8 sm:px-0 sm:text-lg md:mt-9 font-medium"
             style={{
               opacity: loaded ? 1 : 0,
               transform: loaded ? "translateY(0)" : "translateY(20px)",
               transition: "all 800ms cubic-bezier(0.22, 1, 0.36, 1) 600ms",
             }}
           >
-            Chaque jour, plus de 500 entrepreneurs suivent nos conseils sur
-            LinkedIn. Voici nos publications les plus utiles pour améliorer votre
-            acquisition, votre site web et votre stratégie produit.
+            Chaque jour, de nombreux praticiens suivent nos conseils sur
+            LinkedIn. Retrouvez ici nos meilleures astuces pour faire connaître votre
+            cabinet, avoir plus de patients, et améliorer votre site internet facilement.
           </p>
 
           {/* Dual CTAs */}
@@ -351,10 +351,10 @@ export default function RessourcesLinkedin() {
           <div
             className="mt-12 grid grid-cols-2 gap-4 sm:mt-14 sm:gap-5 md:mt-16 md:grid-cols-4 md:gap-6 w-full max-w-4xl"
           >
-            <MetricCard value="+500" label="Abonnés" delay={900} loaded={loaded} />
-            <MetricCard value="10k+" label="Vues / semaine" delay={1000} loaded={loaded} />
-            <MetricCard value="Daily" label="Conseils" delay={1100} loaded={loaded} />
-            <MetricCard value="100%" label="Gratuit" delay={1200} loaded={loaded} />
+            <MetricCard value="+500" label="Praticiens abonnés" delay={900} loaded={loaded} />
+            <MetricCard value="10k+" label="Vues chaque semaine" delay={1000} loaded={loaded} />
+            <MetricCard value="1 / jour" label="Conseil publié" delay={1100} loaded={loaded} />
+            <MetricCard value="100%" label="Toujours gratuit" delay={1200} loaded={loaded} />
           </div>
 
         </div>

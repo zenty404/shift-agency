@@ -64,11 +64,11 @@ export default function CTACalendly() {
           {/* ── Left: text content ── */}
           <div className="flex-1">
             <h2 className="font-display text-3xl font-bold text-white sm:text-4xl lg:text-[48px] lg:leading-tight">
-              On lance votre projet ?
+              On discute de votre cabinet ?
             </h2>
             <p className="mt-4 max-w-md text-base leading-relaxed text-white/70">
-              Réservez un créneau de 30 minutes pour discuter de votre projet.
-              Sans engagement, on écoute d&apos;abord.
+              Réservez un petit créneau de 30 minutes au téléphone.
+              C'est sans engagement, on est là pour vous écouter.
             </p>
 
             {/* Reassurance list */}

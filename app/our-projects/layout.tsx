@@ -6,28 +6,28 @@ import type { Metadata } from "next";
    ═══════════════════════════════════════════════════════════ */
 
 export const metadata: Metadata = {
-  title: "Portfolio & Réalisations | Sites, SaaS, Apps — Shift Agency",
+  title: "Nos réalisations de sites pour praticiens — Shift Agency",
   description:
-    "Découvrez nos projets web et mobile : +50 sites vitrines, +20 applications SaaS et mobiles en production. Landing pages performantes, e-commerce, dashboards. 5/5 sur Google.",
+    "Découvrez les sites internet que nous avons créés pour des cabinets de médecine douce, ostéopathes, naturopathes et thérapeutes. Des sites clairs qui attirent des patients.",
 
   keywords: [
-    "portfolio agence web",
-    "réalisations web",
-    "projets React Next.js",
-    "site vitrine exemple",
-    "SaaS développement",
-    "application mobile portfolio",
-    "landing page référence",
-    "agence développement Paris",
-    "projet web sur mesure",
-    "dashboard application",
+    "site internet praticien",
+    "création site ostéopathe",
+    "site web naturopathe",
+    "site médecine douce",
+    "exemple site thérapeute",
+    "agence web santé",
+    "création site cabinet",
+    "avoir plus de patients",
+    "site vitrine praticien",
+    "référencement thérapeute",
   ],
 
   openGraph: {
-    title: "Portfolio — Projets Web & Mobile | Shift Agency",
+    title: "Nos réalisations de sites pour praticiens — Shift Agency",
     description:
-      "+50 sites vitrines, +20 applications en production. Sites corporate, SaaS, apps mobiles. 5/5 sur Google.",
-    url: "https://Shift Agency/our-projects",
+      "Des sites internet simples, apaisants et efficaces pour les professionnels de la santé et du bien-être.",
+    url: "https://arthur-dev.eu/our-projects",
     type: "website",
     locale: "fr_FR",
     siteName: "Shift Agency",
@@ -36,20 +36,20 @@ export const metadata: Metadata = {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Shift Agency — Portfolio & Réalisations",
+        alt: "Shift Agency — Exemples de sites pour praticiens",
       },
     ],
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "Portfolio — Projets Web & Mobile",
-    description: "+50 sites, +20 apps en production. SaaS, landing pages, sites corporate.",
+    title: "Nos réalisations de sites pour praticiens",
+    description: "Des sites internet simples et efficaces pour les professionnels du bien-être.",
     images: ["/og-image.jpg"],
   },
 
   alternates: {
-    canonical: "https://Shift Agency/our-projects",
+    canonical: "https://arthur-dev.eu/our-projects",
   },
 };
 
@@ -61,44 +61,32 @@ export default function OurProjectsLayout({
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
-    name: "Portfolio Shift Agency",
-    description: "Portfolio de projets web et mobile réalisés par Shift Agency",
-    url: "https://Shift Agency/our-projects",
+    name: "Réalisations de sites pour praticiens",
+    description: "Exemples de sites web pour cabinets et praticiens par Shift Agency",
+    url: "https://arthur-dev.eu/our-projects",
     isPartOf: {
       "@type": "WebSite",
       name: "Shift Agency",
-      url: "https://Shift Agency",
+      url: "https://arthur-dev.eu",
     },
     mainEntity: {
       "@type": "ItemList",
       name: "Nos réalisations",
-      description: "Sites vitrines, SaaS, applications mobiles et e-commerce",
+      description: "Sites pour ostéopathes, naturopathes et thérapeutes",
       itemListElement: [
         {
           "@type": "CreativeWork",
-          name: "Plateforme SaaS",
-          description: "Dashboard et application SaaS complète",
-          image: "https://Shift Agency/saas.png",
+          name: "Site Complet",
+          description: "Un site clair pour présenter votre cabinet et attirer des patients",
+          image: "https://arthur-dev.eu/artisan.png",
         },
         {
           "@type": "CreativeWork",
-          name: "Landing Page",
-          description: "Landing page performante et optimisée conversion",
-          image: "https://Shift Agency/landing.png",
-        },
-        {
-          "@type": "CreativeWork",
-          name: "Site Vitrine",
-          description: "Site vitrine professionnel pour artisan",
-          image: "https://Shift Agency/artisan.png",
+          name: "Site Simple",
+          description: "Une belle page rassurante pour prendre rendez-vous facilement",
+          image: "https://arthur-dev.eu/landing.png",
         },
       ],
-    },
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: "5",
-      bestRating: "5",
-      ratingCount: "1",
     },
   };
 
